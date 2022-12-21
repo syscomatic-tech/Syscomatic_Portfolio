@@ -1,0 +1,119 @@
+.navbar {
+  position: fixed;
+  z-index: 999;
+  /* width: 1440px; */
+  width: 100vw;
+  margin: 0 auto;
+  height: 61px;
+  left: 0px;
+  top: 0px;
+
+  background: #0c0032;
+  /* Drop Shadow */
+
+  /* box-shadow: 4.6926px 4.6926px 79.7742px rgba(0, 0, 0, 0.05); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 38px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 170px; */
+}
+.logo {
+  width: 180px;
+  height: 30.79px;
+}
+.logo a {
+  display: block;
+}
+.content ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+
+  width: 485px;
+  height: 31px;
+}
+.content ul li {
+  list-style-type: none;
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+}
+.quote {
+  /* display: flex;
+  flex-direction: row;
+  align-items: flex-start; */
+  padding: 8px 28px;
+  gap: 10px;
+  width: 165px;
+  height: 43px;
+  background: #ffffff;
+  border: none;
+  border-radius: 26px;
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  /* line-height: 27px; */
+  color: #311589;
+}
+.hamburger {
+  display: none;
+}
+.hideMobileNavigation{
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 50%;
+    height: auto;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .content,
+  .quote {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger svg {
+    margin: 0 20px;
+    width: 30px;
+    height: 30px;
+  }
+  .MobileNavigation {
+    display: block;
+    position: absolute;
+    right: -40px;
+    top: 45px;
+    min-width: 150px;
+    background-color: #0c0032;
+    border-radius: 10px;
+  }
+  .MobileNavigation ul {
+    margin: 0;
+    padding: 35px 30px;
+    font-size: 21px;
+  }
+  .MobileNavigation ul li {
+    list-style: none;
+  }
+  
+}

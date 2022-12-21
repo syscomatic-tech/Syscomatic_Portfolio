@@ -1,0 +1,124 @@
+.container {
+  margin: 100px 0;
+  padding: 0 100px;
+}
+.heading h3 {
+  margin: 12px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 76px;
+}
+.heading p {
+  width: 560px;
+  height: 70px;
+  margin: 0 auto 80px;
+  /* font-family: 'Poppins'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 34px;
+  text-align: center;
+}
+.main {
+  width: 100%;
+  display: flex;
+  background-color: #0c0033;
+}
+.youtube {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: auto; */
+}
+.youtube iframe {
+  width: 100%;
+  height: 100%;
+}
+.testimonial {
+  flex-basis: 50%;
+  padding: 42px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.testimonial p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  /* or 33px */
+}
+.testimonial h4 {
+  margin: 1px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 36px;
+}
+.testimonial h6 {
+  margin: 1px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #9c99a5;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 100px 0;
+    padding: 50px 30px;
+  }
+  .heading h3 {
+    margin:  0;
+   
+    font-size: 40px;
+    line-height: 66px;
+  }
+  .heading p {
+    width: auto;
+    height: auto;
+    margin:20px;
+    
+    font-size: 19px;
+    line-height: 34px;
+  }
+  .main {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0c0033;
+  }
+  .youtube {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: auto; */
+  }
+  .youtube iframe {
+    width: auto;
+    height: 100%;
+  }
+  .testimonial {
+    padding: 25px 0;
+  }
+  .testimonial p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    /* or 33px */
+  }
+  .testimonial h4 {
+    font-size: 21px;
+    line-height: 36px;
+  }
+  .testimonial h6 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

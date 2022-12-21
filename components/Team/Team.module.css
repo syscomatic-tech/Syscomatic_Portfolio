@@ -1,0 +1,127 @@
+.container {
+  margin: 150px 0;
+  padding: 0 100px;
+}
+.heading h3 {
+  margin: 12px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 76px;
+}
+.heading p {
+  width: 560px;
+  height: 70px;
+  margin: 0 auto 80px;
+  /* font-family: 'Poppins'; */
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 23px; */
+  line-height: 34px;
+  text-align: center;
+}
+.container ul {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 21px;
+}
+.container ul li {
+  height: auto;
+  padding: 40px;
+  list-style-type: none;
+  background-color: #0c0033;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container ul li h4 {
+  margin: 10px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 52px;
+}
+.container ul li h5 {
+  margin: 10px 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #9f81ff;
+}
+.container ul li p {
+  /* width: 307.27px; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #9c99a5;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  .container ul li {
+    padding: 30px;
+  }
+  .container ul li h4 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .container ul li h5 {
+    font-size: 17px;
+    line-height: 27px;
+  }
+  .container ul li p {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container ul {
+    gap: 15px;
+  }
+  .container ul li {
+    padding: 20px;
+  }
+  .container li div img {
+    width: 100px;
+    height: 100px;
+  }
+  .container ul li h4 {
+    font-size: 27px;
+    line-height: 36px;
+  }
+  .container ul li h5 {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .container ul li p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 150px 0;
+    padding: 50px 30px;
+  }
+  .heading h3 {
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 66px;
+  }
+  .heading p {
+    width: auto;
+    height: auto;
+    margin: 0 auto 80px;
+    font-size: 17px;
+    line-height: 34px;
+    text-align: center;
+  }
+  .container ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+}

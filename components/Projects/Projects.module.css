@@ -1,0 +1,122 @@
+.container {
+  padding: 100px;
+}
+.heading h3 {
+  margin: 12px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 76px;
+}
+.heading p {
+  /* width: 560px; */
+  /* height: 70px; */
+  margin: 0 auto 80px;
+  /* font-family: 'Poppins'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 34px;
+  text-align: center;
+}
+.container ul {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 23px;
+}
+.container ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 25px 30px;
+  gap: 30px;
+  background: #0c0033;
+}
+.container ul li div {
+  height: 70px;
+}
+.container ul li h4 {
+  margin: 17px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+.container ul li p {
+  /* width: 307.27px; */
+  /* height: 52px; */
+
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* color: #9c99a5; */
+}
+.container ul li a {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  gap: 10px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  .container ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+  .container ul li {
+    padding: 50px 60px;
+  }
+  .container ul li h4 {
+    font-size: 30px;
+  }
+  .container ul li p {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .container ul li {
+    padding: 25px 30px;
+  }
+  .container ul li h4 {
+    font-size: 25px;
+  }
+  .container ul li p {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 50px 30px;
+  }
+  .heading h3 {
+    margin: 0;
+
+    font-size: 40px;
+    line-height: 66px;
+  }
+  .heading p {
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 34px;
+  }
+  .container ul {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 23px;
+  }
+  .laptop {
+    width: 100%;
+  }
+}

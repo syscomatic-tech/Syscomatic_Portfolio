@@ -1,0 +1,82 @@
+.container {
+  margin: 0;
+
+  padding: 0 100px;
+}
+.heading h3 {
+  margin: 12px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 76px;
+}
+.heading p {
+  width: 560px;
+  height: 70px;
+  margin: 0 auto 80px;
+  /* font-family: 'Poppins'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 34px;
+  text-align: center;
+}
+.container ul {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 21px;
+}
+.container ul li {
+  /* height: 253px; */
+  padding: 40px;
+  list-style-type: none;
+  background-color: #0c0033;
+}
+.container ul li h4 {
+  margin: 10px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+.container ul li p {
+  /* width: 307.27px; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #9c99a5;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  .container ul li {
+    /* height: 253px; */
+    padding: 30px 40px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container ul li p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 50px 30px;
+  }
+  .heading h3 {
+    margin: 0;
+    font-size: 40px;
+    line-height: 66px;
+  }
+  .heading p {
+    width: auto;
+   
+    font-size: 17px;
+    line-height: 34px;
+    text-align: center;
+  }
+  .container ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
