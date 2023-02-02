@@ -4,7 +4,7 @@ import style from "../styles/Mission.module.css"
 const mission = () => {
   return (
     <div className={style.container}>
-      <Mission>hjjjjjjjjjjjjjjjjjjjjj</Mission>
+      <Mission></Mission>
     </div>
   );
 };
