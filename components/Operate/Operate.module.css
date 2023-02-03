@@ -1,0 +1,155 @@
+.container {
+  padding: 100px;
+}
+.heading h3 {
+  margin: 12px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 76px;
+}
+.heading p {
+  /* width: 560px; */
+  /* height: 70px; */
+  /* font-family: 'Poppins'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 34px;
+  text-align: center;
+}
+
+.list {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listName {
+  width: 16rem;
+  padding-left: 2rem;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.listName::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  width: 1px;
+  height: 100%;
+  background-color: #484848;
+  top: 0;
+}
+.listName h4 {
+  cursor: pointer;
+  padding: 6px 0;
+  transition: all 0.2s;
+}
+.relative {
+  position: relative;
+}
+.title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+.des {
+  text-align: left;
+  margin: 0;
+  font-size: 18px;
+  max-width: 32rem;
+}
+.dot {
+  position: absolute;
+  top: 13px;
+  left: -22px;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  background-color: white;
+  z-index: 1;
+  transition: transform 0.4s;
+}
+
+.listDetails {
+  width: 70%;
+  position: relative;
+}
+.listDetails img {
+  max-width: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+.boxCover {
+  height: 0;
+  padding-top: 52%;
+}
+.listDetails .boxCover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(56, 0, 68, 0.322);
+  inset: 0;
+  z-index: -1;
+}
+.listDetails .box {
+  padding: 25px;
+  display: flex;
+  position: absolute;
+  inset: 0;
+  align-items: end;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.details {
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 40px;
+  }
+  .list {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .listDetails {
+    width: 100%;
+  }
+  .listName {
+    width: 100%;
+    padding-left: 0;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .listName::after {
+    display: none;
+  }
+  .dot {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  .des {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .listDetails .box {
+    padding: 8px;
+  }
+}

@@ -2,6 +2,7 @@ import Head from "next/head";
 import Banner from "../components/Banner/Banner";
 import Client from "../components/Client/Client";
 import Info from "../components/Info/Info";
+import Operate from "../components/Operate/Operate";
 import Projects from "../components/Projects/Projects";
 import Services from "../components/Services/Services";
 import Technologies from "../components/Technologies/Technologies";
@@ -22,6 +23,7 @@ export default function Home() {
       <Info></Info>
       <Client></Client>
       <Technologies></Technologies>
+      <Operate />
       <Projects></Projects>
       <Testimonials></Testimonials>
     </div>
