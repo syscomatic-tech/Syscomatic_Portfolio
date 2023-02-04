@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 100px;
+  padding: 15px 100px;
 }
 .footerHeading h1 {
   font-style: normal;
@@ -34,7 +34,7 @@
   /* identical to box height */
 
   /* #311589 */
-
+  white-space: nowrap;
   color: #311589;
 }
 .footerMain {
@@ -63,6 +63,14 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  gap: 10px;
+}
+.navigation ul a {
+  font-size: 18px;
+  transition: 0.5s;
+}
+.navigation ul a:hover {
+  opacity: 0.7;
 }
 .navigation ul li {
   list-style-type: none;
@@ -74,9 +82,10 @@
 }
 /* .navigation  */
 .footerContact {
-  flex: 35%;
-  /* display: flex;
-  align-items: center; */
+  flex: 35% 1;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 }
 .footerContact div {
   margin: auto 0;
@@ -85,7 +94,7 @@
   gap: 15px;
 }
 .container hr {
-  margin: 0;
+  margin: 15px 0;
   height: 1px;
   background-color: #9c99a5;
 }
@@ -157,7 +166,7 @@
     align-items: flex-start;
     justify-content: space-between;
   }
-  .logoSection img{
+  .logoSection img {
     width: 80%;
   }
   .logoSection p {
@@ -189,8 +198,7 @@
     align-items: center;
     justify-content: center;
   }
-  .footerEnd div p{
+  .footerEnd div p {
     margin: 10px 0;
   }
-  
 }

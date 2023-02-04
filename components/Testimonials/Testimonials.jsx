@@ -20,9 +20,10 @@ const Testimonials = () => {
           ></iframe>
         </div>
         <div className={style.testimonial}>
+         {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="Images/Testimonial/quote.png" alt="" />
           <p>
-            Onnow has the best ever tech services. They are a great team and
+            Syscomatic has the best ever tech services. They are a great team and
             their service is top notch. I highly recommend them if you need any
             tech services!
           </p>

@@ -139,6 +139,12 @@
   .dot {
     display: none;
   }
+  .listName h4 {
+    padding: 6px 14px;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    /* font-weight: 500 !important; */
+  }
 }
 @media screen and (max-width: 480px) {
   .title {
@@ -152,4 +158,5 @@
   .listDetails .box {
     padding: 8px;
   }
+  
 }

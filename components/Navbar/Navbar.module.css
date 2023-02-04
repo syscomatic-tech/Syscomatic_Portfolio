@@ -99,20 +99,39 @@
     height: 30px;
   }
   .MobileNavigation {
-    display: block;
-    position: absolute;
-    right: -40px;
-    top: 45px;
+    display: flex;
+    position: fixed;
     min-width: 150px;
-    background-color: #0c0032;
-    border-radius: 10px;
+    background-color: #5b00ca;
     width: 100%;
     text-align: center;
+    height: 100%;
+    inset: 0;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
   }
+  .MobileNavigation button {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 35px;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .MobileNavigation button:hover {
+    opacity: 0.9s;
+  }
+
   .MobileNavigation ul {
     margin: 0;
     padding: 35px 30px;
     font-size: 21px;
+    width: 100%;
+    background: #00000014;
   }
   .MobileNavigation ul li {
     list-style: none;

@@ -108,12 +108,12 @@
 }
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {
   .slogan h1 {
-    font-size: 68px;
+    font-size: 75px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slogan h1 {
-    font-size: 65px;
+    font-size: 75px;
   }
   .contact {
     padding: 30px;

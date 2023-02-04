@@ -9,7 +9,6 @@ const Info = () => {
   const [fifth, setFifth] = useState(false);
   const [sixth, setSixth] = useState(false);
 
-
   return (
     <div className={style.container}>
       <div className={style.static}>
@@ -26,7 +25,7 @@ const Info = () => {
       <div className={style.dropDown}>
         <ul>
           <li>
-            <div>
+            <div onClick={() => setFirst(!first)}>
               <div>
                 <img
                   src="Images/Info/check_small.png"
@@ -38,7 +37,6 @@ const Info = () => {
               </div>
               <img
                 className={style.dropDownImg}
-                onClick={ ()=>setFirst(!first)}
                 src="Images/Info/dropDown.png"
                 width="20"
                 height="12"
@@ -54,7 +52,7 @@ const Info = () => {
             </p>
           </li>
           <li>
-            <div>
+            <div onClick={() => setSecond(!second)}>
               <div>
                 <img
                   src="Images/Info/check_small.png"
@@ -66,7 +64,6 @@ const Info = () => {
               </div>
               <img
                 className={style.dropDownImg}
-                onClick={ ()=>setSecond(!second)}
                 src="Images/Info/dropDown.png"
                 width="20"
                 height="12"
@@ -82,7 +79,7 @@ const Info = () => {
             </p>
           </li>
           <li>
-            <div>
+            <div onClick={() => setThird(!third)}>
               <div>
                 <img
                   src="Images/Info/check_small.png"
@@ -94,7 +91,6 @@ const Info = () => {
               </div>
               <img
                 className={style.dropDownImg}
-                onClick={  ()=>setThird(!third)}
                 src="Images/Info/dropDown.png"
                 width="20"
                 height="12"
@@ -110,7 +106,7 @@ const Info = () => {
             </p>
           </li>
           <li>
-            <div>
+            <div onClick={() => setFourth(!fourth)}>
               <div>
                 <img
                   src="Images/Info/check_small.png"
@@ -122,7 +118,6 @@ const Info = () => {
               </div>
               <img
                 className={style.dropDownImg}
-                onClick={ ()=>setFourth(!fourth)}
                 src="Images/Info/dropDown.png"
                 width="20"
                 height="12"
@@ -137,7 +132,7 @@ const Info = () => {
             </p>
           </li>
           <li>
-            <div>
+            <div onClick={() => setFifth(!fifth)}>
               <div>
                 <img
                   src="Images/Info/check_small.png"
@@ -149,7 +144,6 @@ const Info = () => {
               </div>
               <img
                 className={style.dropDownImg}
-                onClick={()=>setFifth(!fifth)}
                 src="Images/Info/dropDown.png"
                 width="20"
                 height="12"
@@ -165,7 +159,7 @@ const Info = () => {
             </p>
           </li>
           <li>
-            <div>
+            <div onClick={() => setSixth(!sixth)}>
               <div>
                 <img
                   src="Images/Info/check_small.png"
@@ -177,7 +171,6 @@ const Info = () => {
               </div>
               <img
                 className={style.dropDownImg}
-                onClick={ ()=>setSixth(!sixth)}
                 src="Images/Info/dropDown.png"
                 width="20"
                 height="12"
