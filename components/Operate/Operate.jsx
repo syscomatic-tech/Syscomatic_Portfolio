@@ -5,46 +5,50 @@ let operateInfo = [
   {
     id: 1,
     heading: "Analysis",
-    description: "Lorem ipsum dolor sit ",
+    description:
+      "The first step involves understanding the requirements and goals of the product. The team gathers information and analyzes the market to determine what the product should do and what the target audience needs.",
     img: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
   },
   {
     id: 2,
     heading: "Plaining",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    description:
+      "The next step is to create a plan for how to build the product. This includes defining the scope of the project, identifying the resources needed, and setting a timeline.",
     img: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
   },
   {
     id: 3,
     heading: "Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptate consequuntur beatae suscipit deserunt laboriosam dolore",
+      "In this step, the team creates a visual representation of the product, including wireframes and mockups. They also determine the user experience and the user interface.",
     img: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
   },
   {
     id: 4,
     heading: "Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptate consequuntur beatae ",
+      "The actual software development takes place in this step. The team writes code, integrates different components, and builds the product.",
     img: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
   },
   {
     id: 5,
     heading: "Testing",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptate ",
+      "The product is thoroughly tested to ensure it works as intended and meets quality standards. This includes both manual testing by the team and automated testing using tools.",
     img: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
   },
   {
     id: 6,
     heading: "Deployment",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    description:
+      "Once the product is deemed ready, it is deployed to a live environment where it is available to users.",
     img: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
   },
   {
     id: 7,
     heading: "Maintenance",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    description:
+      "The final step is to provide ongoing support and maintenance for the product. This includes fixing bugs, adding new features, and keeping the product up to date.",
     img: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
   },
 ];
