@@ -3,14 +3,14 @@ import style from "./Client.module.css";
 const Client = () => {
   return (
     <div className={style.container}>
-      <div className={style.heading}>
-      <h3>who we serve?</h3>
-      <p>
-        Syscomatic is software development as a service (SDass) Platform with a
-        business
-      </p>
+      <div className={style.heading} data-aos="fade-down" data-aos-delay="100">
+        <h3>who we serve?</h3>
+        <p>
+          Syscomatic is software development as a service (SDass) Platform with
+          a business
+        </p>
       </div>
-      <ul>
+      <ul data-aos="fade-up" data-aos-delay="200">
         <li>
           <img src="Images/Client/e-commerce.png" alt="" />
           <h4>E-Commerce</h4>

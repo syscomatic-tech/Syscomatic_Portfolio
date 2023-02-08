@@ -4,11 +4,11 @@ import style from "./Projects.module.css";
 const Projects = () => {
   return (
     <div className={style.container}>
-      <div className={style.heading}>
+      <div className={style.heading} data-aos="fade-down" data-aos-delay="200">
         <h3>Projects</h3>
         <p>Take a look at some of our successful projects</p>
       </div>
-      <ul>
+      <ul data-aos="fade-up" data-aos-delay="400">
         <li>
           <div>
             <img src="Images/Projects/onnow.png" alt="" />
@@ -17,83 +17,148 @@ const Projects = () => {
             D2C food <br />
             ordering platform
           </h4>
-          <img className={style.laptop} src="Images/Projects/laptop.png" alt="" />
+          <img
+            className={style.laptop}
+            src="Images/Projects/laptop.png"
+            alt=""
+          />
           <p>
             This web app is used for D2C food ordering systems, kitchen
             management systems, and digital payment integration.
           </p>
+
           <Link href="#">
-            View Work <img src="Images/Projects/arrow.png" width="30" alt="" />
+            <button className={style.viewWork}>
+              <span className={style.circle} aria-hidden="true">
+                <span className={style.icon} />
+              </span>
+              <span className={style.buttonText}>View Work</span>
+            </button>
           </Link>
         </li>
         <li>
           <div>
             <img src="Images/Projects/urgentfuel.png" alt="" />
           </div>
-          <h4>On-demand fuel delivery <br /> logistic system</h4>
-          <img className={style.laptop} src="Images/Projects/laptop.png" alt="" />
+          <h4>
+            On-demand fuel delivery <br /> logistic system
+          </h4>
+          <img
+            className={style.laptop}
+            src="Images/Projects/laptop.png"
+            alt=""
+          />
           <p>
             This web app is used for D2C food ordering systems, kitchen
             management systems, and digital payment integration.
           </p>
           <Link href="#">
-            View Work <img src="Images/Projects/arrow.png" width="30" alt="" />
+            <button className={style.viewWork}>
+              <span className={style.circle} aria-hidden="true">
+                <span className={style.icon} />
+              </span>
+              <span className={style.buttonText}>View Work</span>
+            </button>
           </Link>
         </li>
         <li>
           <div>
             <img src="Images/Projects/pocacademy.png" alt="" />
           </div>
-          <h4>Bangladeshi academic <br /> exam management system</h4>
-          <img className={style.laptop} src="Images/Projects/laptop.png" alt="" />
+          <h4>
+            Bangladeshi academic <br /> exam management system
+          </h4>
+          <img
+            className={style.laptop}
+            src="Images/Projects/laptop.png"
+            alt=""
+          />
           <p>
             This web app is used for D2C food ordering systems, kitchen
             management systems, and digital payment integration.
           </p>
           <Link href="#">
-            View Work <img src="Images/Projects/arrow.png" width="30" alt="" />
+            <button className={style.viewWork}>
+              <span className={style.circle} aria-hidden="true">
+                <span className={style.icon} />
+              </span>
+              <span className={style.buttonText}>View Work</span>
+            </button>
           </Link>
         </li>
         <li>
           <div>
             <img src="Images/Projects/tunibibi.png" alt="" />
           </div>
-          <h4>Cross border trading <br /> application</h4>
-          <img className={style.laptop} src="Images/Projects/laptop.png" alt="" />
+          <h4>
+            Cross border trading <br /> application
+          </h4>
+          <img
+            className={style.laptop}
+            src="Images/Projects/laptop.png"
+            alt=""
+          />
           <p>
             This web app is used for D2C food ordering systems, kitchen
             management systems, and digital payment integration.
           </p>
           <Link href="#">
-            View Work <img src="Images/Projects/arrow.png" width="30" alt="" />
+            <button className={style.viewWork}>
+              <span className={style.circle} aria-hidden="true">
+                <span className={style.icon} />
+              </span>
+              <span className={style.buttonText}>View Work</span>
+            </button>
           </Link>
         </li>
         <li>
           <div>
             <img src="Images/Projects/buet.png" alt="" />
           </div>
-          <h4>Academic Web <br /> Application for BUET</h4>
-          <img className={style.laptop} src="Images/Projects/laptop.png" alt="" />
+          <h4>
+            Academic Web <br /> Application for BUET
+          </h4>
+          <img
+            className={style.laptop}
+            src="Images/Projects/laptop.png"
+            alt=""
+          />
           <p>
             This web app is used for D2C food ordering systems, kitchen
             management systems, and digital payment integration.
           </p>
           <Link href="#">
-            View Work <img src="Images/Projects/arrow.png" width="30" alt="" />
+            <button className={style.viewWork}>
+              <span className={style.circle} aria-hidden="true">
+                <span className={style.icon} />
+              </span>
+              <span className={style.buttonText}>View Work</span>
+            </button>
           </Link>
         </li>
         <li>
           <div>
             <img src="Images/Projects/du.png" alt="" />
           </div>
-          <h4>Academic Web Application <br /> for Dhaka University </h4>
-          <img className={style.laptop} src="Images/Projects/laptop.png" alt="" />
+          <h4>
+            Academic Web Application <br /> for Dhaka University{" "}
+          </h4>
+          <img
+            className={style.laptop}
+            src="Images/Projects/laptop.png"
+            alt=""
+          />
           <p>
             This web app is used for D2C food ordering systems, kitchen
             management systems, and digital payment integration.
           </p>
           <Link href="#">
-            View Work <img src="Images/Projects/arrow.png" width="30" alt="" />
+            <button className={style.viewWork}>
+              <span className={style.circle} aria-hidden="true">
+                <span className={style.icon} />
+              </span>
+              <span className={style.buttonText}>View Work</span>
+            </button>
           </Link>
         </li>
       </ul>

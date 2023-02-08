@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 import style from "./Navbar.module.css";
 const Navbar = () => {
   const [mobileNavigation, setMobileNavigation] = useState(false);
+  const router = useRouter();
   return (
     <nav className={style.navbar}>
       <div className={style.container}>
@@ -13,25 +15,57 @@ const Navbar = () => {
         </div>
         <div className={style.content}>
           <ul>
-            <li>
+            <li
+              className={
+                router.pathname === "/"
+                  ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
+                  : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
+              }
+            >
               <Link href="/">Home</Link>
             </li>
-            <li>
+            <li
+              className={
+                router.pathname === "/#services"
+                  ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
+                  : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
+              }
+            >
               <Link href="/#services">Services</Link>
             </li>
 
-            <li>
+            <li
+              className={
+                router.pathname === "/Mission"
+                  ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
+                  : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
+              }
+            >
               <Link href="/Mission">Mission</Link>
             </li>
-            <li>
+            <li
+              className={
+                router.pathname === "/Vision"
+                  ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
+                  : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
+              }
+            >
               <Link href="/Vision">Vision</Link>
             </li>
-            <li>
+            <li
+              className={
+                router.pathname === "/about"
+                  ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
+                  : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
+              }
+            >
               <Link href="/about">About Us</Link>
             </li>
           </ul>
         </div>
-        <button className={style.quote}>Get a Quote</button>
+        <button className={`btn button normal-case ${style.quote}`}>
+          Get a Quote
+        </button>
         <div
           className={
             mobileNavigation
@@ -60,20 +94,20 @@ const Navbar = () => {
             </button>
           </div>
           <ul>
-            <li>
+            <li className="">
               <Link href="/">Home</Link>
             </li>
-            <li>
+            <li className="">
               <Link href="/#services">Services</Link>
             </li>
 
-            <li>
+            <li className="">
               <Link href="/mission">Mission</Link>
             </li>
-            <li>
+            <li className="">
               <Link href="/vision">Vision</Link>
             </li>
-            <li>
+            <li className="">
               <Link href="/about">About Us</Link>
             </li>
           </ul>

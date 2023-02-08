@@ -11,18 +11,18 @@ const Info = () => {
 
   return (
     <div className={style.container}>
-      <div className={style.static}>
+      <div className={style.static} data-aos="fade-right" data-aos-delay="200">
         <img src="logo2.png" alt="" />
         <p>
           Syscomatic is software development as a service (SDass) Platform with
           a business-first approach. We offer a variety of value-adding
           solutions and best-of-breed services to internet companies worldwide.
         </p>
-        <button className={style.info}>
+        <button className={`btn button normal-case ${style.info}`}>
           <Link href="/about">About us</Link>
         </button>
       </div>
-      <div className={style.dropDown}>
+      <div className={style.dropDown} data-aos="fade-left" data-aos-delay="400">
         <ul>
           <li>
             <div onClick={() => setFirst(!first)}>
@@ -45,10 +45,10 @@ const Info = () => {
             </div>
 
             <p className={first && style.DropDownElement}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              autem optio accusamus nostrum fugiat sint aliquid amet,
-              perferendis atque quidem, pariatur architecto explicabo dolorem.
-              Eveniet sed tempora quidem doloremque magnam.
+              We&apos;re a network of innovators. We devise bold solutions to
+              the most intricate client challenges. We can explore new
+              technologies to design best-fit solutions that have 96% of our
+              clients ready to recommend us.
             </p>
           </li>
           <li>
@@ -72,10 +72,8 @@ const Info = () => {
             </div>
 
             <p className={second && style.DropDownElement}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              autem optio accusamus nostrum fugiat sint aliquid amet,
-              perferendis atque quidem, pariatur architecto explicabo dolorem.
-              Eveniet sed tempora quidem doloremque magnam.
+              We&apos;ll assist. We won&apos;t finish a project until
+              you&apos;re satisfied. We&apos;re a 97%-satisfied tech partner.
             </p>
           </li>
           <li>
@@ -99,10 +97,9 @@ const Info = () => {
             </div>
 
             <p className={third && style.DropDownElement}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              autem optio accusamus nostrum fugiat sint aliquid amet,
-              perferendis atque quidem, pariatur architecto explicabo dolorem.
-              Eveniet sed tempora quidem doloremque magnam.
+              Our innovations help clients stay ahead. We consider your
+              immediate and long-term needs. For our clients, their customers,
+              and the communities they influence.
             </p>
           </li>
           <li>
@@ -125,10 +122,8 @@ const Info = () => {
               />
             </div>
             <p className={fourth && style.DropDownElement}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              autem optio accusamus nostrum fugiat sint aliquid amet,
-              perferendis atque quidem, pariatur architecto explicabo dolorem.
-              Eveniet sed tempora quidem doloremque magnam.
+              We can engineer your project with an agile framework that ensures
+              faster results, scalability, and stability.
             </p>
           </li>
           <li>
@@ -152,10 +147,9 @@ const Info = () => {
             </div>
 
             <p className={fifth && style.DropDownElement}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              autem optio accusamus nostrum fugiat sint aliquid amet,
-              perferendis atque quidem, pariatur architecto explicabo dolorem.
-              Eveniet sed tempora quidem doloremque magnam.
+              Our team can design the optimal software for your contemporary and
+              predictable needs using the cloud, microservices,
+              containerization, etc.
             </p>
           </li>
           <li>
@@ -178,10 +172,9 @@ const Info = () => {
               />
             </div>
             <p className={sixth && style.DropDownElement}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              autem optio accusamus nostrum fugiat sint aliquid amet,
-              perferendis atque quidem, pariatur architecto explicabo dolorem.
-              Eveniet sed tempora quidem doloremque magnam.
+              Our expertise can construct customised software end-to-end,
+              including design, technology choices, architecture, and operations
+              to scale capacity as needed.
             </p>
           </li>
         </ul>

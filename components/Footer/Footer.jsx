@@ -4,10 +4,16 @@ import style from "./Footer.module.css";
 const Footer = () => {
   return (
     <div className={style.container}>
-      <div className={style.footerHeading}>
+      <div
+        className={style.footerHeading}
+        data-aos="fade-in-up"
+        data-aos-delay="200"
+      >
         <div>
           <h1>Let’s start a project!</h1>
-          <button className={style.createBtn}>Let’s Create!</button>
+          <button className={`btn normal-case button`}>
+            Let&#39;s Create!
+          </button>
         </div>
       </div>
       <div className={style.footerMain}>
@@ -73,7 +79,10 @@ const Footer = () => {
       <hr />
       <div className={style.footerEnd}>
         <div>
-          <p>All rights reserved to <Link href="#">Syscomatic™ Technologies</Link></p>
+          <p>
+            All rights reserved to{" "}
+            <Link href="#">Syscomatic™ Technologies</Link>
+          </p>
         </div>
         <div>
           <p>Terms of Use</p>

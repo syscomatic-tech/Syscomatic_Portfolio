@@ -1,7 +1,7 @@
 .container {
   /* position: absolute; */
   /* width: 1440px; */
-  height: 667px;
+  height: 90vh;
   display: flex;
   /* left: 0px;
   top: 0px; */
@@ -103,9 +103,18 @@
   /* identical to box height */
 
   /* #311589 */
-
+  cursor: pointer;
   color: #311589;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
+.contact .createBtn:hover {
+  background: #311589;
+  color: white;
+  border: white;
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {
   .slogan h1 {
     font-size: 75px;
@@ -131,7 +140,6 @@
 }
 @media only screen and (max-width: 600px) {
   .container {
-    
     height: auto;
     background: linear-gradient(180deg, rgba(7, 0, 29, 0) 0%, #07001d 100%),
       url(/banner.png);
@@ -145,7 +153,7 @@
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .slogan h1 {
     /* width: 90%; */
     font-size: 70px;
@@ -156,35 +164,34 @@
     height: auto;
   }
   .contact {
-   width: 100%;
+    width: 100%;
     padding: 50px 40px;
     gap: 25px;
     flex-basis: 40%;
   }
 
-
   .contact .createBtn {
     padding: 12px 24px;
     gap: 10px;
-  
+
     width: auto;
     height: 54px;
-  
+
     /* #FFFFFF */
-  
+
     background: #ffffff;
     border: none;
     border-radius: 34px;
-  
+
     /* font-family: 'Poppins'; */
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     /* line-height: 30px; */
     /* identical to box height */
-  
+
     /* #311589 */
-  
+
     color: #311589;
   }
 }

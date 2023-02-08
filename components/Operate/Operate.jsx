@@ -14,14 +14,14 @@ let operateInfo = [
     heading: "Plaining",
     description:
       "The next step is to create a plan for how to build the product. This includes defining the scope of the project, identifying the resources needed, and setting a timeline.",
-    img: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+    img: "https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
   },
   {
     id: 3,
     heading: "Design",
     description:
       "In this step, the team creates a visual representation of the product, including wireframes and mockups. They also determine the user experience and the user interface.",
-    img: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+    img: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
   },
   {
     id: 4,
@@ -57,7 +57,7 @@ const Operate = () => {
 
   return (
     <div className={style.container}>
-      <div className={style.heading}>
+      <div className={style.heading} data-aos="fade-left" data-aos-delay="200">
         <h3>How we operate?</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
@@ -65,7 +65,7 @@ const Operate = () => {
         </p>
       </div>
 
-      <div className={style.list}>
+      <div className={style.list} data-aos="fade-right" data-aos-delay="400">
         <div className={style.listName}>
           {operateInfo.map((item, i) => {
             return (
