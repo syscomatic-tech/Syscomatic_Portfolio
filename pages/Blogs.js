@@ -1,4 +1,5 @@
 import axios from "axios";
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import BlogCards from "../components/Blogs/BlogCards";
@@ -7,8 +8,18 @@ import BlogsBanner from "../public/Images/Blogs/blogs_banner.png";
 const Blogs = (props) => {
   return (
     <div>
-      <div className="mb-8 mt-16">
-        <Image src={BlogsBanner} alt={"blog"} width={1440} height={200}></Image>
+      <Head>
+        <title>Blogs - Syscomatic </title>
+      </Head>
+      <div>
+        <Image
+          src={BlogsBanner}
+          alt={"blog"}
+          width={1440}
+          height={200}
+          className=" my-32"
+          // unoptimized={true}
+        ></Image>
       </div>
       <BlogsHeader blogs={props.data}></BlogsHeader>
       <BlogCards blogs={props.data}></BlogCards>

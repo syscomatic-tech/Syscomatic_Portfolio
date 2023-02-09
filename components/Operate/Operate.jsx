@@ -11,7 +11,7 @@ let operateInfo = [
   },
   {
     id: 2,
-    heading: "Plaining",
+    heading: "Planning",
     description:
       "The next step is to create a plan for how to build the product. This includes defining the scope of the project, identifying the resources needed, and setting a timeline.",
     img: "https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
@@ -60,8 +60,8 @@ const Operate = () => {
       <div className={style.heading} data-aos="fade-left" data-aos-delay="200">
         <h3>How we operate?</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-          voluptate consequuntur beatae suscipit deserunt laboriosam dolore
+          We abide by a unique way of approach to minimize the timeframe & to
+          maximize productivity, and efficiency.
         </p>
       </div>
 

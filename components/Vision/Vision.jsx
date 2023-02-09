@@ -1,8 +1,12 @@
+import Head from "next/head";
 import React from "react";
 import style from "./Vision.module.css";
 const Vision = () => {
   return (
     <div className={style.container}>
+      <Head>
+        <title>Vissions - Syscomatic </title>
+      </Head>
       <div>
         <h1>Our Vision</h1>
         <h2 className="my-5">

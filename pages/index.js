@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="title" content="Syscomatic" />
         <meta
           name="description"
-          content="Build Your Digital Existence using the help of Syscomatic. 
+          content="Build Your Digital Existence. 
 "
         />
 
@@ -29,9 +29,12 @@ export default function Home() {
         <meta property="og:title" content="Syscomatic " />
         <meta
           property="og:description"
-          content="Build Your Digital Existence using the help of Syscomatic."
+          content="Build Your Digital Existence."
         />
-        <meta property="og:image" content="../public/banner_Facebook.jpg" />
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/QXFY69C/banner-Facebook.jpg"
+        />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -39,11 +42,11 @@ export default function Home() {
         <meta property="twitter:title" content="Syscomatic" />
         <meta
           property="twitter:description"
-          content="Build Your Digital Existence using the help of Syscomatic."
+          content="Build Your Digital Existence."
         />
         <meta
           property="twitter:image"
-          content="../public/banner_Facebook.jpg"
+          content="https://i.ibb.co/QXFY69C/banner-Facebook.jpg"
         />
       </Head>
 

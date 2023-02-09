@@ -22,7 +22,7 @@ const BlogCards = ({ blogs }) => {
             />
           </figure>
           <div className="card-body px-0 lg:px-4 ">
-            <p className="text-secondary font-semibold text-md mb-2">
+            <p className="text-[#551FFF] font-semibold text-md mb-2">
               {item?.createdDate?.slice(0, 10)}
             </p>
             <h2 className="text-xl font-bold  font-display max-w-sm  leading-tight">

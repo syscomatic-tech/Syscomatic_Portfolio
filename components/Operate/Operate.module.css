@@ -54,6 +54,7 @@
 .title {
   font-size: 24px;
   margin: 10px 0;
+  font-weight: 600;
 }
 .des {
   text-align: left;
@@ -155,8 +156,9 @@
 }
 @media screen and (max-width: 480px) {
   .title {
-    font-size: 18px;
-    margin: 5px 0;
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 600;
   }
   .des {
     font-size: 16px;
