@@ -48,13 +48,25 @@ const ContactUs = () => {
           </div>
           <div className={style.link}>
             <Link href="#">
-              <img src="Images/Contact/linkedin.png" alt="" />
+              <img
+                src="Images/Contact/linkedin.png"
+                alt=""
+                className="hover:rotate-6 transition-all"
+              />
             </Link>
             <Link href="#">
-              <img src="Images/Contact/facebook.png" alt="" />
+              <img
+                src="Images/Contact/facebook.png"
+                alt=""
+                className="hover:rotate-6 transition-all"
+              />
             </Link>
             <Link href="#">
-              <img src="Images/Contact/cb.png" alt="" />
+              <img
+                src="Images/Contact/cb.png"
+                alt=""
+                className="hover:rotate-6 transition-all"
+              />
             </Link>
           </div>
         </div>

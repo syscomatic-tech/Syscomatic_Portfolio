@@ -32,7 +32,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <div className="max-w-[1440px] mx-auto">
       <Navbar></Navbar>
-      <Component {...pageProps} />
+      <div className="mt-[80px]">
+        <Component {...pageProps} />
+      </div>
       <ContactUs></ContactUs>
       <Footer></Footer>
     </div>

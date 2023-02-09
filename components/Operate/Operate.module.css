@@ -118,9 +118,6 @@
   }
 }
 
-
-
-
 @media screen and (max-width: 768px) {
   .boxCover {
     padding-top: 62%;
@@ -141,7 +138,7 @@
     flex-direction: row;
     gap: 10px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
   }
   .listName::after {
     display: none;

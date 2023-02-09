@@ -4,11 +4,11 @@ import React from "react";
 const BlogCards = ({ blogs }) => {
   const router = useRouter();
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-y-6 gap-x-2 mt-4 py-8  lg:px-12  ">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-6 gap-x-2 mt-4 py-8  lg:px-12  ">
       {blogs.map((item) => (
         <div
           key={item?._id}
-          className="card group  cursor-pointer border rounded-lg hover:shadow-lg p-2 transition-all"
+          className="card group  cursor-pointer  rounded-lg hover:shadow-lg bg-[#0B002D] transition-all"
           onClick={() => router.push(`/blog/${item?._id}`)}
         >
           <figure>
@@ -22,14 +22,20 @@ const BlogCards = ({ blogs }) => {
             />
           </figure>
           <div className="card-body px-0 lg:px-4 ">
-            <p className="text-secondary font-semibold text-md">
-              {item?.date?.slice(0, 10)}
+            <p className="text-secondary font-semibold text-md mb-2">
+              {item?.createdDate?.slice(0, 10)}
             </p>
             <h2 className="text-xl font-bold  font-display max-w-sm  leading-tight">
               <span className="link link-underline link-underline-black no-underline ">
                 {item?.blogTitle}
               </span>
             </h2>
+            <p
+              className="text-gray-400 text-md mt-2"
+              dangerouslySetInnerHTML={{
+                __html: item?.blogDescription?.slice(0, 100) + "...",
+              }}
+            ></p>
           </div>
         </div>
       ))}

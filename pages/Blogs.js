@@ -1,10 +1,15 @@
 import axios from "axios";
+import Image from "next/image";
 import React from "react";
 import BlogCards from "../components/Blogs/BlogCards";
 import BlogsHeader from "../components/Blogs/BlogsHeader";
+import BlogsBanner from "../public/Images/Blogs/blogs_banner.png";
 const Blogs = (props) => {
   return (
     <div>
+      <div className="my-8">
+        <Image src={BlogsBanner} alt={"blog"} width={1440} height={200}></Image>
+      </div>
       <BlogsHeader blogs={props.data}></BlogsHeader>
       <BlogCards blogs={props.data}></BlogCards>
     </div>

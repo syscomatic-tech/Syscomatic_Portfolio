@@ -4,7 +4,7 @@
   /* width: 1440px; */
   width: 100vw;
   margin: 0 auto;
-  height: 8vh;
+  height: 80px;
   left: 0px;
   top: 0px;
 
@@ -103,7 +103,7 @@
     display: flex;
     position: fixed;
     min-width: 150px;
-    background-color: #5b00ca;
+    background-color: #17171bd5;
     width: 100%;
     text-align: center;
     height: 100%;
@@ -132,6 +132,8 @@
     padding: 35px 30px;
     font-size: 21px;
     width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
     background: #00000014;
   }
   .MobileNavigation ul li {

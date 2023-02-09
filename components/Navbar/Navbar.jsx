@@ -72,7 +72,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <button className={`btn button normal-case ${style.quote}`}>
+        <button
+          className={`btn button normal-case hidden lg:block ${style.quote}`}
+        >
           Get a Quote
         </button>
         <div
@@ -103,21 +105,27 @@ const Navbar = () => {
             </button>
           </div>
           <ul>
-            <li className="">
+            <li className="" onClick={() => setMobileNavigation(false)}>
               <Link href="/">Home</Link>
             </li>
-            <li className="">
+            <li className="" onClick={() => setMobileNavigation(false)}>
               <Link href="/#services">Services</Link>
             </li>
 
-            <li className="">
-              <Link href="/mission">Mission</Link>
+            <li className="" onClick={() => setMobileNavigation(false)}>
+              <Link href="/Mission">Mission</Link>
             </li>
-            <li className="">
-              <Link href="/vision">Vision</Link>
+            <li className="" onClick={() => setMobileNavigation(false)}>
+              <Link href="/Vision">Vision</Link>
             </li>
-            <li className="">
+            <li className="" onClick={() => setMobileNavigation(false)}>
+              <Link href="/Blogs">Blogs</Link>
+            </li>
+            <li className="" onClick={() => setMobileNavigation(false)}>
               <Link href="/about">About Us</Link>
+            </li>
+            <li className="btn bg-white rounded-full p-4 text-black">
+              Get a Quote
             </li>
           </ul>
         </div>

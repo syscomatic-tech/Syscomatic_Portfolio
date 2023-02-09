@@ -10,16 +10,6 @@ function BlogsHeader({ blogs }) {
   const router = useRouter();
   return (
     <div className="lg:px-12 py-8">
-      <div className="-mx-4 flex flex-wrap justify-center">
-        <div className="w-full px-4">
-          <div className="mx-auto mb-[6px]  text-center lg:mb-12">
-            <h2 className="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px] font-siliguri">
-              Recent Blogs
-            </h2>
-          </div>
-        </div>
-      </div>
-
       {blogs?.length > 0 ? (
         <Swiper
           pagination={{
@@ -60,7 +50,7 @@ function BlogsHeader({ blogs }) {
                           </span>
                         </h2>
                         <p
-                          className="text-secondary text-md mt-2"
+                          className="text-gray-400 text-md mt-2"
                           dangerouslySetInnerHTML={{
                             __html:
                               item?.blogDescription?.slice(0, 400) + " ...",

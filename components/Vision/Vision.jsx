@@ -5,7 +5,7 @@ const Vision = () => {
     <div className={style.container}>
       <div>
         <h1>Our Vision</h1>
-        <h2>
+        <h2 className="my-5">
           To deliver best-in-class business solutions utilizing technology by
           the best people.
         </h2>
@@ -24,7 +24,7 @@ const Vision = () => {
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Vision;

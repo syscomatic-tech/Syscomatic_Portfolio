@@ -13,13 +13,13 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Syscomatic</title>
+        <title>Syscomatic : Build Your Digital Existence</title>
         <link rel="icon" href="/favicon.ico" />
         {/* <!-- Primary Meta Tags --> */}
         <meta name="title" content="Syscomatic" />
         <meta
           name="description"
-          content="Syscomatic is made for digital startup solutions. 
+          content="Build Your Digital Existence using the help of Syscomatic. 
 "
         />
 
@@ -29,7 +29,7 @@ export default function Home() {
         <meta property="og:title" content="Syscomatic " />
         <meta
           property="og:description"
-          content="Syscomatic is made for digital startup solutions."
+          content="Build Your Digital Existence using the help of Syscomatic."
         />
         <meta property="og:image" content="../public/banner_Facebook.jpg" />
 
@@ -39,7 +39,7 @@ export default function Home() {
         <meta property="twitter:title" content="Syscomatic" />
         <meta
           property="twitter:description"
-          content="Syscomatic is made for digital startup solutions."
+          content="Build Your Digital Existence using the help of Syscomatic."
         />
         <meta
           property="twitter:image"
