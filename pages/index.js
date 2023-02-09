@@ -14,8 +14,37 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Syscomatic</title>
-        <meta name="description" content="Developing Front-End by TOFAYEL101" />
         <link rel="icon" href="/favicon.ico" />
+        {/* <!-- Primary Meta Tags --> */}
+        <meta name="title" content="Syscomatic" />
+        <meta
+          name="description"
+          content="Syscomatic is made for digital startup solutions. 
+"
+        />
+
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.syscomatic.com/" />
+        <meta property="og:title" content="Syscomatic " />
+        <meta
+          property="og:description"
+          content="Syscomatic is made for digital startup solutions."
+        />
+        <meta property="og:image" content="../public/banner_Facebook.jpg" />
+
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.syscomatic.com/" />
+        <meta property="twitter:title" content="Syscomatic" />
+        <meta
+          property="twitter:description"
+          content="Syscomatic is made for digital startup solutions."
+        />
+        <meta
+          property="twitter:image"
+          content="../public/banner_Facebook.jpg"
+        />
       </Head>
 
       <Banner></Banner>

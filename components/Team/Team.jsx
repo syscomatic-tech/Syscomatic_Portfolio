@@ -98,18 +98,6 @@ const Team = () => {
         </li>
         <li>
           <div>
-            <img src="Images/Team/alex.png" alt="" />
-            <h4>Alex</h4>
-            <h5>Backend Engineer</h5>
-            <p>
-              With experience of more than 1 year in the industry, Alex is
-              adding value to Enginix as a backend engineer.
-            </p>
-          </div>
-          <img src="Images/Team/linkedin.png" width="30" height="30" alt="" />
-        </li>
-        <li>
-          <div>
             <img src="Images/Team/sabbir.png" alt="" />
             <h4>Md. Sabbir Hossain</h4>
             <h5>Backend Engineer</h5>

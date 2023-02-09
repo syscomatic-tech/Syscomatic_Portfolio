@@ -54,6 +54,15 @@ const Navbar = () => {
             </li>
             <li
               className={
+                router.pathname === "/Blogs"
+                  ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
+                  : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
+              }
+            >
+              <Link href="/Blogs">Blogs</Link>
+            </li>
+            <li
+              className={
                 router.pathname === "/about"
                   ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
                   : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
