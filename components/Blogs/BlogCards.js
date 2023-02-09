@@ -36,6 +36,30 @@ const BlogCards = ({ blogs }) => {
                 __html: item?.blogDescription?.slice(0, 100) + "...",
               }}
             ></p>
+            <div className="flex items-center mt-8 space-x-4">
+              <Image
+                src={item?.blogImg}
+                alt="Blog Image"
+                width={60}
+                height={60}
+                className="rounded-full cursor-pointer"
+                objectFit="cover"
+                onClick={() => router.push(`/blog/${item?._id}`)}
+              ></Image>
+              <div>
+                <h2 className="text-2xl font-bold  font-display  cursor-pointer leading-tight">
+                  <span
+                    className="link link-underline link-underline-black no-underline hover:text-[#551FFF] transition-all"
+                    onClick={() => router.push(`/blog/${item?._id}`)}
+                  >
+                    Zahed Hasan
+                  </span>
+                </h2>
+                <p className="text-gray-400 my-1 font-semibold text-md">
+                  {item?.createdDate?.slice(0, 10)}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       ))}

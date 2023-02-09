@@ -9,60 +9,74 @@ import { useRouter } from "next/router";
 function BlogsHeader({ blogs }) {
   const router = useRouter();
   return (
-    <div className="lg:px-12 py-8">
+    <div className=" mb-12">
       {blogs?.length > 0 ? (
-        <Swiper
-          pagination={{
-            //   dynamicBullets: true,
-            clickable: true,
-          }}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          {
-            <div>
-              {blogs
-                .reverse()
-                .slice(0, 3)
-                .map((item) => (
-                  <SwiperSlide key={item._id}>
-                    <div
-                      className="flex flex-col lg:flex-row cursor-pointer  rounded-lg  hover:shadow-lg transition-all "
+        <>
+          {blogs
+            .reverse()
+            .slice(0, 1)
+            .map((item) => (
+              <div
+                className="flex flex-col lg:flex-row   rounded-lg  hover:shadow-lg transition-all group"
+                key={item._id}
+              >
+                <div className="lg:w-1/2  w-full  cursor-pointer flex justify-center items-center ">
+                  <Image
+                    src={item?.blogImg}
+                    alt="Blog Image"
+                    width={600}
+                    height={300}
+                    className="rounded-lg  group-hover:scale-[.99] transition-all"
+                    objectFit="cover"
+                    onClick={() => router.push(`/blog/${item?._id}`)}
+                  />
+                </div>
+                <div className="lg:w-1/2 w-full   flex  justify-center  flex-col ">
+                  <p className="text-[#551FFF] mb-4 font-semibold text-md">
+                    {item?.createdDate?.slice(0, 10)} ・Recent
+                  </p>
+                  <h2 className="text-2xl font-bold  font-display  cursor-pointer leading-tight">
+                    <span
+                      className="link link-underline link-underline-black no-underline hover:text-[#551FFF] transition-all"
                       onClick={() => router.push(`/blog/${item?._id}`)}
                     >
-                      <div className="lg:w-1/2  w-full lg:mx-4 flex justify-center items-center ">
-                        <Image
-                          src={item?.blogImg}
-                          alt="Blog Image"
-                          width={600}
-                          height={400}
-                          className="rounded "
-                          objectFit="cover"
-                        />
-                      </div>
-                      <div className="lg:w-1/2 w-full  flex  justify-center flex-col ">
-                        <p className="text-secondary font-semibold text-md">
-                          {item?.createdDate?.slice(0, 10)} ・{" "}
-                        </p>
-                        <h2 className="text-2xl font-bold  font-display   leading-tight">
-                          <span className="link link-underline link-underline-black no-underline ">
-                            {item?.blogTitle}
-                          </span>
-                        </h2>
-                        <p
-                          className="text-gray-400 text-md mt-2"
-                          dangerouslySetInnerHTML={{
-                            __html:
-                              item?.blogDescription?.slice(0, 400) + " ...",
-                          }}
-                        ></p>
-                      </div>
+                      {item?.blogTitle}
+                    </span>
+                  </h2>
+                  <p
+                    className="text-gray-400 text-md mt-2"
+                    dangerouslySetInnerHTML={{
+                      __html: item?.blogDescription?.slice(0, 400) + " ...",
+                    }}
+                  ></p>
+                  <div className="flex items-center mt-8 space-x-4">
+                    <Image
+                      src={item?.blogImg}
+                      alt="Blog Image"
+                      width={60}
+                      height={60}
+                      className="rounded-full cursor-pointer"
+                      objectFit="cover"
+                      onClick={() => router.push(`/blog/${item?._id}`)}
+                    ></Image>
+                    <div>
+                      <h2 className="text-2xl font-bold  font-display  cursor-pointer leading-tight">
+                        <span
+                          className="link link-underline link-underline-black no-underline hover:text-[#551FFF] transition-all"
+                          onClick={() => router.push(`/blog/${item?._id}`)}
+                        >
+                          Zahed Hasan
+                        </span>
+                      </h2>
+                      <p className="text-gray-400 my-1 font-semibold text-md">
+                        {item?.createdDate?.slice(0, 10)}
+                      </p>
                     </div>
-                  </SwiperSlide>
-                ))}
-            </div>
-          }
-        </Swiper>
+                  </div>
+                </div>
+              </div>
+            ))}
+        </>
       ) : !loading ? (
         <p className="text-3xl text-primary font-semibold text-center my-6">
           Nothing to show here...

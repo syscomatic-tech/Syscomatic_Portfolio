@@ -61,10 +61,10 @@ const Values = () => {
           a business
         </p>
       </div>
-      <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-12">
+      <div className="mt-12 grid grid-cols-1 lg:grid-cols-2  gap-12">
         {specialist.map(({ icon, tittle, description, _id }) => (
           <div
-            className="flex flex-col lg:flex-row items-center justifiy-between"
+            className="flex flex-col lg:flex-row items-center justify-center"
             data-aos="fade-right"
             key={_id}
           >
