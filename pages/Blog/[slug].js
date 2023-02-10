@@ -1,59 +1,50 @@
 import axios from "axios";
 import Head from "next/head";
 import Image from "next/image";
-import Router, { useRouter } from "next/router";
 import React from "react";
+import BlogCards from "../../components/Blogs/BlogCards";
 
-const blogdetails = ({ data: blog }) => {
-  const { asPath } = Router();
-  console.log(blog);
+const blogdetails = ({ data: blogs }) => {
+  const blog = blogs[0];
   return (
     <div>
       <Head>
-        <title>Blog Details - Syscomatic</title>
+        <title>{blog?.blogTitle} - Syscomatic</title>
       </Head>
 
-      <div className="custom-container py-6">
-        {/* <div className="grid place-items-center">
+      <div className="pb-6">
+        <div className="grid place-items-center">
           <Image
-            src={blog?.thumbnail}
+            src={blog?.blogImg}
             alt="Blog Image"
-            width={1300}
-            height={600}
-            className="rounded "
-            objectFit="cover"
+            width={1440}
+            height={400}
+            className=""
+            // objectFit="cover"
           />
         </div>
-        <div className="flex justify-between flex-col-reverse lg:flex-row items-start my-6">
-          <div className="lg:w-[95%] ">
+        <div className="flex justify-between flex-col-reverse lg:flex-row items-start my-16">
+          <div className="lg:w-[80%] mx-auto ">
             <div className=" px-2 lg:px-4 mb-6">
-              <p className="text-secondary font-semibold text-md">
-                {blog?.date?.slice(0, 10)} ・{" "}
-                <span className="text-primary">
-                  {blog?.categories?.map((u) => u?.CategoryName).join(" | ")}
-                </span>
-              </p>
-              <h2 className="card-title text-2xl font-bold break-words">
-                {blog?.title}
+              <h2 className="card-title text-5xl font-bold break-words mt-8">
+                {blog?.blogTitle}
               </h2>
+              <p className="font-medium text-gray-300 my-8">
+                Written by <span className="underline">Shakib Al Hasan</span> ;
+                published on {blog?.createdDate?.slice(0, 10)}
+              </p>
               <p
-                className="text-secondary  text-lg"
-                dangerouslySetInnerHTML={{ __html: blog?.content }}
+                className="text-gray-300 mt-8  text-lg"
+                dangerouslySetInnerHTML={{ __html: blog?.blogDescription }}
               ></p>
             </div>
-            <div className="flex gap-2">
-              {blog?.tags?.map((tag, index) => (
-                <button
-                  className="btn btn-xs btn-primary text-white"
-                  key={index}
-                >
-                  {tag}
-                </button>
-              ))}
+            <div className="mt-20 border-t border-gray-200 py-12">
+              <h2 className="text-4xl text-white font-semibold">Read More</h2>
             </div>
           </div>{" "}
-        </div> */}
+        </div>
       </div>
+      <div></div>
     </div>
   );
 };

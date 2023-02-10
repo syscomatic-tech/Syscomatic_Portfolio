@@ -5,7 +5,7 @@ import React from "react";
 import BlogCards from "../components/Blogs/BlogCards";
 import BlogsHeader from "../components/Blogs/BlogsHeader";
 import BlogsBanner from "../public/Images/Blogs/blogs_banner.png";
-const Blogs = (props) => {
+const Blogs = ({ data }) => {
   return (
     <div className="px-6">
       <Head>
@@ -21,8 +21,8 @@ const Blogs = (props) => {
           // unoptimized={true}
         ></Image>
       </div>
-      <BlogsHeader blogs={props.data}></BlogsHeader>
-      <BlogCards blogs={props.data}></BlogCards>
+      <BlogsHeader blogs={data}></BlogsHeader>
+      <BlogCards blogs={data}></BlogCards>
     </div>
   );
 };
