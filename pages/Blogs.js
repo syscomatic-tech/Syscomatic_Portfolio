@@ -17,7 +17,7 @@ const Blogs = (props) => {
           alt={"blog"}
           width={1440}
           height={200}
-          className=" my-32"
+          className=" mt-40 mb-28"
           // unoptimized={true}
         ></Image>
       </div>

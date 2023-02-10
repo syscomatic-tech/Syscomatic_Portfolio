@@ -1,8 +1,12 @@
+import axios from "axios";
 import Head from "next/head";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import React from "react";
 
-const blogdetails = () => {
+const blogdetails = ({ data: blog }) => {
+  const { asPath } = useRouter();
+  console.log(blog);
   return (
     <div>
       <Head>
@@ -10,7 +14,7 @@ const blogdetails = () => {
       </Head>
 
       <div className="custom-container py-6">
-        <div className="grid place-items-center">
+        {/* <div className="grid place-items-center">
           <Image
             src={blog?.thumbnail}
             alt="Blog Image"
@@ -48,10 +52,17 @@ const blogdetails = () => {
               ))}
             </div>
           </div>{" "}
-        </div>
+        </div> */}
       </div>
     </div>
   );
 };
-
+export async function getServerSideProps({ params }) {
+  // Fetch data from external API
+  const { data } = await axios.get(
+    `https://api.server.syscomatic.com/api/v1/searchBlogSlug/${params?.slug}`
+  );
+  // Pass data to the page via props
+  return { props: data };
+}
 export default blogdetails;

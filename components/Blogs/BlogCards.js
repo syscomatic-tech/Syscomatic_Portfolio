@@ -9,7 +9,7 @@ const BlogCards = ({ blogs }) => {
         <div
           key={item?._id}
           className="card group  cursor-pointer  rounded-lg hover:shadow-lg bg-[#0B002D] transition-all"
-          onClick={() => router.push(`/blog/${item?._id}`)}
+          onClick={() => router.push(`/Blog/${item?.slug}`)}
         >
           <figure>
             <Image
@@ -44,13 +44,13 @@ const BlogCards = ({ blogs }) => {
                 height={60}
                 className="rounded-full cursor-pointer"
                 objectFit="cover"
-                onClick={() => router.push(`/blog/${item?._id}`)}
+                onClick={() => router.push(`/Blog/${item?.slug}`)}
               ></Image>
               <div>
                 <h2 className="text-2xl font-bold  font-display  cursor-pointer leading-tight">
                   <span
                     className="link link-underline link-underline-black no-underline hover:text-[#551FFF] transition-all"
-                    onClick={() => router.push(`/blog/${item?._id}`)}
+                    onClick={() => router.push(`/Blog/${item?.slug}`)}
                   >
                     Zahed Hasan
                   </span>
