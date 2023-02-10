@@ -6,7 +6,7 @@ function BlogsHeader({ blogs }) {
   const router = useRouter();
   console.log(blogs);
   return (
-    <div className=" mb-12">
+    <div className=" mb-12 ">
       {blogs?.length > 0 ? (
         <>
           {blogs
@@ -14,7 +14,7 @@ function BlogsHeader({ blogs }) {
             .slice(0, 1)
             .map((item) => (
               <div
-                className="flex flex-col lg:flex-row   rounded-lg  hover:shadow-lg transition-all group"
+                className="flex flex-col lg:flex-row  space-y-6 lg:space-y-0 rounded-lg  hover:shadow-lg transition-all group"
                 key={item._id}
               >
                 <div className="lg:w-1/2  w-full  cursor-pointer flex justify-center items-center ">

@@ -7,7 +7,7 @@ import BlogsHeader from "../components/Blogs/BlogsHeader";
 import BlogsBanner from "../public/Images/Blogs/blogs_banner.png";
 const Blogs = (props) => {
   return (
-    <div>
+    <div className="px-6">
       <Head>
         <title>Blogs - Syscomatic </title>
       </Head>

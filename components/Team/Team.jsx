@@ -87,7 +87,7 @@ const Team = () => {
         <li>
           <div>
             <img src="Images/Team/jisan.png" alt="" />
-            <h4>Jisan Miah</h4>
+            <h4>Jisan Mia</h4>
             <h5>Frontend Engineer</h5>
             <p>
               Jisan is a effective frontend engineer. He creates visually

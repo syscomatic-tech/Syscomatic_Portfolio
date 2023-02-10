@@ -4,11 +4,11 @@ import React from "react";
 const BlogCards = ({ blogs }) => {
   const router = useRouter();
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-6 gap-x-2 mt-4 py-8  lg:px-12  ">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-6 gap-x-6 mt-4 py-8    ">
       {blogs.map((item) => (
         <div
           key={item?._id}
-          className="card group  cursor-pointer  rounded-lg hover:shadow-lg bg-[#0B002D] transition-all"
+          className="card group  cursor-pointer  rounded-lg hover:shadow-lg  bg-[#0B002D] transition-all"
           onClick={() => router.push(`/Blog/${item?.slug}`)}
         >
           <figure>
@@ -21,7 +21,7 @@ const BlogCards = ({ blogs }) => {
               className="group-hover:scale-[.99] transition-all"
             />
           </figure>
-          <div className="card-body px-0 lg:px-4 ">
+          <div className="card-body px-2 lg:px-4 ">
             <p className="text-[#551FFF] font-semibold text-md mb-2">
               {item?.createdDate?.slice(0, 10)}
             </p>
