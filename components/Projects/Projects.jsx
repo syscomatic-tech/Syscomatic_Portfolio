@@ -3,9 +3,9 @@ import React from "react";
 import style from "./Projects.module.css";
 const Projects = () => {
   return (
-    <div className={style.container}>
+    <div className={style.container} id="portfolio">
       <div className={style.heading} data-aos="fade-down" data-aos-delay="200">
-        <h3>Projects</h3>
+        <h3>Portfolio</h3>
         <p>Take a look at some of our successful projects</p>
       </div>
       <ul data-aos="fade-up" data-aos-delay="400">

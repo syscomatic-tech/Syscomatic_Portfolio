@@ -24,7 +24,7 @@ const BlogCards = ({ blogs }) => {
           <div className="card-body px-2 lg:px-4 ">
             <h2 className="text-xl font-bold  font-display max-w-sm  leading-tight">
               <span className="text-[#551FFF] font-semibold text-md mb-2">
-                {item?.createdDate?.slice(0, 10)}
+                {item?.category}
               </span>{" "}
               <br /> <br />
               <span className="link link-underline link-underline-black no-underline ">

@@ -1,6 +1,6 @@
 .footerHeading {
-  width: 100%;
-  margin: 75px auto;
+  width: 100vw;
+  margin: 150px auto;
   background-color: #311589;
 }
 .footerHeading div {
@@ -14,6 +14,12 @@
   font-weight: 700;
   font-size: 50px;
   line-height: 75px;
+}
+.link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
 }
 .createBtn {
   padding: 17px 44px;
@@ -102,7 +108,7 @@
   padding: 24px 100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .footerEnd div {
   font-weight: 400;
@@ -143,6 +149,11 @@
     margin: 15px auto;
     padding: 20px 0px;
   }
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
   .footerHeading div {
     display: flex;
     align-items: center;
@@ -179,6 +190,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
   }
 
   .footerContact div {

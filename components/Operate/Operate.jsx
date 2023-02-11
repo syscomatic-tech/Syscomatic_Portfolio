@@ -58,7 +58,7 @@ const Operate = () => {
   return (
     <div className={style.container}>
       <div className={style.heading} data-aos="fade-left" data-aos-delay="200">
-        <h3>How we operate?</h3>
+        <h3>Our Approach</h3>
         <p>
           We abide by a unique way of approach to minimize the timeframe & to
           maximize productivity, and efficiency.

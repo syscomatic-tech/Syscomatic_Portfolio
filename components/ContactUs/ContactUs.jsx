@@ -81,9 +81,7 @@ const ContactUs = () => {
           <input type="email" name="email" id="" />
           <label htmlFor="">Your Message</label>
           <input type="text" name="message" id="" />
-          <button className={`btn normal-case button`}>
-            Let&#39;s Create!
-          </button>
+          <button className={`btn normal-case button`}>Get a Quote</button>
         </div>
       </div>
     </div>

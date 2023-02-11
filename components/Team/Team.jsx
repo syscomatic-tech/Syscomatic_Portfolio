@@ -13,7 +13,7 @@ const Team = () => {
       <ul>
         <li>
           <div>
-            <img src="Images/Team/rakib.png" alt="" />
+            <img src="Images/Team/rakib.png" alt="" className="my-3" />
             <h4>Rakib Ullah</h4>
             <h5>Founder & CEO</h5>
             <p>
@@ -22,11 +22,17 @@ const Team = () => {
               management.
             </p>
           </div>
-          <img src="Images/Team/linkedin.png" width="30" height="30" alt="" />
+          <img
+            src="Images/Team/linkedin.png"
+            width="30"
+            height="30"
+            alt=""
+            className="my-3"
+          />
         </li>
         <li>
           <div>
-            <img src="Images/Team/shahed.png" alt="" />
+            <img src="Images/Team/shahed.png" alt="" className="my-3" />
             <h4>Shahed Hossain</h4>
             <h5>Chief Research Officer</h5>
             <p>
@@ -34,11 +40,17 @@ const Team = () => {
               his expertise in embedded systems and IoT.
             </p>
           </div>
-          <img src="Images/Team/linkedin.png" width="30" height="30" alt="" />
+          <img
+            src="Images/Team/linkedin.png"
+            width="30"
+            height="30"
+            alt=""
+            className="my-3"
+          />
         </li>
         <li>
           <div>
-            <img src="Images/Team/asifur.png" alt="" />
+            <img src="Images/Team/asifur.png" alt="" className="my-3" />
             <h4>Asifur Rahman</h4>
             <h5>Project Manager</h5>
             <p>
@@ -46,11 +58,17 @@ const Team = () => {
               He is mainly focused on operations.
             </p>
           </div>
-          <img src="Images/Team/linkedin.png" width="30" height="30" alt="" />
+          <img
+            src="Images/Team/linkedin.png"
+            width="30"
+            height="30"
+            alt=""
+            className="my-3"
+          />
         </li>
         <li>
           <div>
-            <img src="Images/Team/thauhid.png" alt="" />
+            <img src="Images/Team/thauhid.png" alt="" className="my-3" />
             <h4>Thauhid Hussain</h4>
             <h5>Chief Product Officer</h5>
             <p>
@@ -58,11 +76,17 @@ const Team = () => {
               and provide great customer experiences.
             </p>
           </div>
-          <img src="Images/Team/linkedin.png" width="30" height="30" alt="" />
+          <img
+            src="Images/Team/linkedin.png"
+            width="30"
+            height="30"
+            alt=""
+            className="my-3"
+          />
         </li>
         <li>
           <div>
-            <img src="Images/Team/zahed.png" alt="" />
+            <img src="Images/Team/zahed.png" alt="" className="my-3" />
             <h4>Zahed Hasan</h4>
             <h5>Chief Technology Officer</h5>
             <p>
@@ -70,11 +94,17 @@ const Team = () => {
               great problem solver and highly dedicated to fast learning.
             </p>
           </div>
-          <img src="Images/Team/linkedin.png" width="30" height="30" alt="" />
+          <img
+            src="Images/Team/linkedin.png"
+            width="30"
+            height="30"
+            alt=""
+            className="my-3"
+          />
         </li>
         <li>
           <div>
-            <img src="Images/Team/Shuvro.png" alt="" />
+            <img src="Images/Team/Shuvro.png" alt="" className="my-3" />
             <h4>Shuvro Baset</h4>
             <h5></h5>
             <p>
@@ -82,11 +112,17 @@ const Team = () => {
               known for problem solving & logical decisions.
             </p>
           </div>
-          <img src="Images/Team/linkedin.png" width="30" height="30" alt="" />
+          <img
+            src="Images/Team/linkedin.png"
+            width="30"
+            height="30"
+            alt=""
+            className="my-3"
+          />
         </li>
         <li>
           <div>
-            <img src="Images/Team/jisan.png" alt="" />
+            <img src="Images/Team/jisan.png" alt="" className="my-3" />
             <h4>Jisan Mia</h4>
             <h5>Frontend Engineer</h5>
             <p>
@@ -94,11 +130,17 @@ const Team = () => {
               appealing and highly functional frontend.
             </p>
           </div>
-          <img src="Images/Team/linkedin.png" width="30" height="30" alt="" />
+          <img
+            src="Images/Team/linkedin.png"
+            width="30"
+            height="30"
+            alt=""
+            className="my-3"
+          />
         </li>
         <li>
           <div>
-            <img src="Images/Team/sabbir.png" alt="" />
+            <img src="Images/Team/sabbir.png" alt="" className="my-3" />
             <h4>Md. Sabbir Hossain</h4>
             <h5>Backend Engineer</h5>
             <p>
@@ -106,7 +148,13 @@ const Team = () => {
               part. He is well known for his logical problem solving experience.
             </p>
           </div>
-          <img src="Images/Team/linkedin.png" width="30" height="30" alt="" />
+          <img
+            src="Images/Team/linkedin.png"
+            width="30"
+            height="30"
+            alt=""
+            className="my-3"
+          />
         </li>
       </ul>
     </div>

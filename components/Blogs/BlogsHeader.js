@@ -30,7 +30,7 @@ function BlogsHeader({ blogs }) {
                 </div>
                 <div className="lg:w-1/2 w-full   flex  justify-center  flex-col ">
                   <p className="text-[#6e42ff] mb-4 font-semibold text-md">
-                    {item?.createdDate?.slice(0, 10)} ・Recent
+                    {item?.category} ・Recent
                   </p>
                   <h2 className="text-2xl font-bold  font-display  cursor-pointer leading-tight">
                     <span

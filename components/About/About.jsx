@@ -6,8 +6,9 @@ const About = () => {
       <div>
         <h1>About Us</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh tortor a
-          risus elementum eget vivamus tellus amet,
+          Syscomatic is software development as a service (SDass) Platform with
+          a business-first approach. We offer a variety of value-adding
+          solutions and best-of-breed services to internet companies worldwide.
         </p>
         <img src="Images/About/about.png" alt="" />
         <div className={style.storyHead}>

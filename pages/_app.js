@@ -30,12 +30,14 @@ function MyApp({ Component, pageProps }) {
     }
   }, []);
   return (
-    <div className="max-w-[1440px] mx-auto">
+    <div>
       <Navbar></Navbar>
-      <div className="mt-[80px]">
-        <Component {...pageProps} />
+      <div className="max-w-[1440px] mx-auto">
+        <div className="mt-[80px]">
+          <Component {...pageProps} />
+        </div>
+        {/* <ContactUs></ContactUs> */}
       </div>
-      <ContactUs></ContactUs>
       <Footer></Footer>
     </div>
   );

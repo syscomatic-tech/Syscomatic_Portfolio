@@ -18,8 +18,8 @@ const Info = () => {
           a business-first approach. We offer a variety of value-adding
           solutions and best-of-breed services to internet companies worldwide.
         </p>
-        <button className={`btn button normal-case ${style.info}`}>
-          <Link href="/about">About us</Link>
+        <button className={`btn button normal-case !px-7 ${style.info}`}>
+          <Link href="/about">Learn More</Link>
         </button>
       </div>
       <div className={style.dropDown} data-aos="fade-left" data-aos-delay="400">

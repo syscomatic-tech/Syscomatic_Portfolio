@@ -26,6 +26,15 @@ const Navbar = () => {
             </li>
             <li
               className={
+                router.pathname === "/about"
+                  ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
+                  : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
+              }
+            >
+              <Link href="/about">About Us</Link>
+            </li>
+            <li
+              className={
                 router.pathname === "/#services"
                   ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
                   : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
@@ -33,8 +42,25 @@ const Navbar = () => {
             >
               <Link href="/#services">Services</Link>
             </li>
-
             <li
+              className={
+                router.pathname === "/#portfolio"
+                  ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
+                  : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
+              }
+            >
+              <Link href="/#portfolio">Portfolio</Link>
+            </li>
+            <li
+              className={
+                router.pathname === "/Blogs"
+                  ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
+                  : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
+              }
+            >
+              <Link href="/Blogs">Blogs</Link>
+            </li>
+            {/* <li
               className={
                 router.pathname === "/Mission"
                   ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
@@ -51,25 +77,7 @@ const Navbar = () => {
               }
             >
               <Link href="/Vision">Vision</Link>
-            </li>
-            <li
-              className={
-                router.pathname === "/Blogs"
-                  ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
-                  : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
-              }
-            >
-              <Link href="/Blogs">Blogs</Link>
-            </li>
-            <li
-              className={
-                router.pathname === "/about"
-                  ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
-                  : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
-              }
-            >
-              <Link href="/about">About Us</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <button
@@ -109,21 +117,25 @@ const Navbar = () => {
               <Link href="/">Home</Link>
             </li>
             <li className="" onClick={() => setMobileNavigation(false)}>
+              <Link href="/about">About Us</Link>
+            </li>
+            <li className="" onClick={() => setMobileNavigation(false)}>
               <Link href="/#services">Services</Link>
             </li>
-
             <li className="" onClick={() => setMobileNavigation(false)}>
+              <Link href="/#portfolio">Portfolio</Link>
+            </li>
+
+            {/* <li className="" onClick={() => setMobileNavigation(false)}>
               <Link href="/Mission">Mission</Link>
             </li>
             <li className="" onClick={() => setMobileNavigation(false)}>
               <Link href="/Vision">Vision</Link>
-            </li>
+            </li> */}
             <li className="" onClick={() => setMobileNavigation(false)}>
               <Link href="/Blogs">Blogs</Link>
             </li>
-            <li className="" onClick={() => setMobileNavigation(false)}>
-              <Link href="/about">About Us</Link>
-            </li>
+
             <li className="btn bg-white rounded-full p-4 text-black">
               Get a Quote
             </li>

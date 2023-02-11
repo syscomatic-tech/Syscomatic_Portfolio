@@ -34,7 +34,7 @@ const Banner = () => {
             data-aos="zoom-in"
             data-aos-delay="1800"
           >
-            Let&#39;s Create!
+            Get a Quote
           </button>
         </div>
       </div>
