@@ -13,74 +13,57 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Syscomatic - Build Your Digital Existence</title>
-        <link rel="icon" href="/favicon.ico" />
+        {/* <meta property="og:title" content="GenRes" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:url" content="https://genres-agency.vercel.app/" />
+        <meta data-n-head="ssr" data-hid="og:image" name="og:image" content="https://i.ibb.co/FWSpk8G/preview.png" />
+        <meta data-n-head="ssr" data-hid="og:locale" name="og:locale" content="en_US" />
+        <meta property="og:description" content="We quickly generate your crucial results" /> */}
+        <meta
+          name="google-site-verification"
+          content="q7cGc9JJqhY_Cp7bWDQUfnvrlqP37q3yTjid9K_vSzw"
+        />
         {/* <!-- Primary Meta Tags --> */}
-        <meta name="title" content="Syscomatic" />
+        <title>Genres Agency: A Startup Life Saver</title>
+        <meta name="title" content="Genres Agency: A Startup Life Saver" />
         <meta
           name="description"
-          content="Build Your Digital Existence. 
+          content="We are an agency with a focus on UI/UX design and website development.  We believe in working together with our clients to develop beautiful, useful, and affordable startup solutions. 
 "
-        />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary" key="twcard" />
-        <meta
-          name="twitter:creator"
-          content="https://i.ibb.co/QXFY69C/banner-Facebook.jpg"
-          key="twhandle"
-        />
-
-        {/* Open Graph */}
-        <meta
-          property="og:url"
-          content="https://www.syscomatic.com/"
-          key="ogurl"
-        />
-        <meta
-          property="og:image"
-          content="https://i.ibb.co/QXFY69C/banner-Facebook.jpg"
-          key="ogimage"
-        />
-        <meta property="og:site_name" content="Syscomatic" key="ogsitename" />
-        <meta
-          property="og:title"
-          content="Syscomatic - Build Your Digital Existence"
-          key="ogtitle"
-        />
-        <meta
-          property="og:description"
-          content="Build Your Digital Existence."
-          key="ogdesc"
         />
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.syscomatic.com/" />
-        <meta property="og:title" content="Syscomatic " />
+        <meta property="og:url" content="https://www.genres-agency.com/" />
+        <meta
+          property="og:title"
+          content="Genres Agency: A Startup Life Saver "
+        />
         <meta
           property="og:description"
-          content="Build Your Digital Existence."
+          content="We are an agency with a focus on UI/UX design and website development.  We believe in working together with our clients to develop beautiful, useful, and affordable startup solutions."
         />
         <meta
           property="og:image"
-          content="https://i.ibb.co/QXFY69C/banner-Facebook.jpg"
+          content="https://i.ibb.co/FWSpk8G/preview.png"
         />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.syscomatic.com/" />
-        <meta property="twitter:title" content="Syscomatic" />
+        <meta property="twitter:url" content="https://www.genres-agency.com/" />
+        <meta
+          property="twitter:title"
+          content="Genres Agency: A Startup Life Saver"
+        />
         <meta
           property="twitter:description"
-          content="Build Your Digital Existence."
+          content="We are an agency with a focus on UI/UX design and website development.  We believe in working together with our clients to develop beautiful, useful, and affordable startup solutions."
         />
         <meta
           property="twitter:image"
-          content="https://i.ibb.co/QXFY69C/banner-Facebook.jpg"
+          content="https://i.ibb.co/FWSpk8G/preview.png"
         />
       </Head>
-
       <Banner></Banner>
       <Services></Services>
       <Info></Info>
