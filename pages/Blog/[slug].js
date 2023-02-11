@@ -19,8 +19,8 @@ const blogdetails = ({ data: blogs }) => {
             alt="Blog Image"
             width={1440}
             height={400}
-            className=""
-            // objectFit="cover"
+            className="h-[600px]"
+            objectFit="cover"
           />
         </div>
         <div className="flex justify-between flex-col-reverse lg:flex-row items-start my-16">

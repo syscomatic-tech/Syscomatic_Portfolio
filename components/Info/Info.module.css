@@ -83,8 +83,8 @@
   /* transition: opacity .4s ease-out; */
   /* opacity: 0; */
 }
+
 .DropDownElement {
-  /* opacity: 1; */
   display: block !important;
   margin-left: 85px;
 }

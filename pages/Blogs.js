@@ -32,6 +32,7 @@ export async function getServerSideProps(context) {
     `https://api.server.syscomatic.com/api/v1/AllBlogList`
   );
   // Pass data to the page via props
+
   return { props: data };
 }
 export default Blogs;

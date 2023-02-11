@@ -17,7 +17,7 @@ const Navbar = () => {
           <ul>
             <li
               className={
-                router.pathname === "/"
+                router.asPath === "/"
                   ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
                   : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
               }
@@ -35,7 +35,7 @@ const Navbar = () => {
             </li>
             <li
               className={
-                router.pathname === "/#services"
+                router.asPath === "/#services"
                   ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
                   : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
               }
@@ -44,7 +44,7 @@ const Navbar = () => {
             </li>
             <li
               className={
-                router.pathname === "/#portfolio"
+                router.asPath === "/#portfolio"
                   ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
                   : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
               }

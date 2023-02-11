@@ -117,3 +117,6 @@ a {
 .button:active {
   filter: brightness(0.9);
 }
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}

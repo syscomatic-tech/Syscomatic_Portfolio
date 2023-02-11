@@ -3,7 +3,7 @@ import React from "react";
 import style from "./Services.module.css";
 const Services = () => {
   return (
-    <div className={style.container} id="services">
+    <div className={style.container}>
       <ul>
         <li data-aos-delay="100" data-aos="fade-right">
           <h1 className={style.OurServices}>Our Services</h1>

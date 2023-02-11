@@ -35,6 +35,7 @@
 }
 .container ul li h2 {
   font-size: 24px;
+  font-weight: 500;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .container ul {
@@ -50,7 +51,7 @@
     margin: 10px 0;
   }
   .container ul li h2 {
-    font-size: 19px;
+    /* font-size: 19px; */
     font-weight: 500;
   }
   .container img {
@@ -89,7 +90,7 @@
     text-align: center;
   }
   .container ul li h2 {
-    font-size: 17px;
+    /* font-size: 17px; */
     margin: 0;
     font-weight: 500;
   }
