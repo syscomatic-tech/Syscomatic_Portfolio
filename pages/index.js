@@ -16,52 +16,52 @@ export default function Home() {
         {/* <meta property="og:title" content="GenRes" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:url" content="https://genres-agency.vercel.app/" />
-        <meta data-n-head="ssr" data-hid="og:image" name="og:image" content="https://i.ibb.co/FWSpk8G/preview.png" />
+        <meta data-n-head="ssr" data-hid="og:image" name="og:image" content="https://i.ibb.co/QXFY69C/banner-Facebook.jpg" />
         <meta data-n-head="ssr" data-hid="og:locale" name="og:locale" content="en_US" />
         <meta property="og:description" content="We quickly generate your crucial results" /> */}
-        <meta
-          name="google-site-verification"
-          content="q7cGc9JJqhY_Cp7bWDQUfnvrlqP37q3yTjid9K_vSzw"
-        />
+
         {/* <!-- Primary Meta Tags --> */}
-        <title>Genres Agency: A Startup Life Saver</title>
-        <meta name="title" content="Genres Agency: A Startup Life Saver" />
+        <title>Syscomatic - Build Your Digital Existence</title>
+        <meta
+          name="title"
+          content="Syscomatic - Build Your Digital Existence"
+        />
         <meta
           name="description"
-          content="We are an agency with a focus on UI/UX design and website development.  We believe in working together with our clients to develop beautiful, useful, and affordable startup solutions. 
+          content="Build Your Digital Existence
 "
         />
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.genres-agency.com/" />
+        <meta property="og:url" content="https://www.syscomatic.com/" />
         <meta
           property="og:title"
-          content="Genres Agency: A Startup Life Saver "
+          content="Syscomatic - Build Your Digital Existence "
         />
         <meta
           property="og:description"
-          content="We are an agency with a focus on UI/UX design and website development.  We believe in working together with our clients to develop beautiful, useful, and affordable startup solutions."
+          content=" Build Your Digital Existence"
         />
         <meta
           property="og:image"
-          content="https://i.ibb.co/FWSpk8G/preview.png"
+          content="https://i.ibb.co/QXFY69C/banner-Facebook.jpg"
         />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.genres-agency.com/" />
+        <meta property="twitter:url" content="https://www.syscomatic.com/" />
         <meta
           property="twitter:title"
-          content="Genres Agency: A Startup Life Saver"
+          content="Syscomatic - Build Your Digital Existence"
         />
         <meta
           property="twitter:description"
-          content="We are an agency with a focus on UI/UX design and website development.  We believe in working together with our clients to develop beautiful, useful, and affordable startup solutions."
+          content=" Build Your Digital Existence"
         />
         <meta
           property="twitter:image"
-          content="https://i.ibb.co/FWSpk8G/preview.png"
+          content="https://i.ibb.co/QXFY69C/banner-Facebook.jpg"
         />
       </Head>
       <Banner></Banner>
