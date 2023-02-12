@@ -4,7 +4,7 @@ const Client = () => {
   return (
     <div className={style.container}>
       <div className={style.heading} data-aos="fade-down" data-aos-delay="100">
-        <h3>who we serve?</h3>
+        <h3>Who we serve?</h3>
         <p>
           Syscomatic is software development as a service (SDass) Platform with
           a business

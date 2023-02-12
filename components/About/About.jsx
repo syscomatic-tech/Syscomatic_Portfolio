@@ -5,7 +5,7 @@ const About = () => {
     <div className={style.container}>
       <div>
         <h1>About Us</h1>
-        <p>
+        <p className="">
           Syscomatic is software development as a service (SDass) Platform with
           a business-first approach. We offer a variety of value-adding
           solutions and best-of-breed services to internet companies worldwide.

@@ -22,6 +22,8 @@ function BlogsHeader({ blogs }) {
                   className="rounded-lg  group-hover:scale-[.99] transition-all"
                   objectFit="cover"
                   onClick={() => router.push(`/Blog/${item?.slug}`)}
+                  placeholder="blur"
+                  blurDataURL="/public/Images/Blogs/blogs_banner.png"
                 />
               </div>
               <div className="lg:w-1/2 w-full   flex  justify-center  flex-col ">

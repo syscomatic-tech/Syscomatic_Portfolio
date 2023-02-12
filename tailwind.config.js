@@ -17,7 +17,7 @@ module.exports = {
         mytheme: {
           primary: "#0c0032",
           secondary: "#311589",
-          "base-100": "#fff",
+          "base-100": "#07001d",
         },
       },
     ],

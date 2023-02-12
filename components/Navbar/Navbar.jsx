@@ -19,7 +19,7 @@ const Navbar = () => {
               className={
                 router.asPath === "/"
                   ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
-                  : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
+                  : "hover:border-b-2 border-gray-600  hover:text-gray-300 transition-all"
               }
             >
               <Link href="/">Home</Link>
