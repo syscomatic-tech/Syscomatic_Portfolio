@@ -53,7 +53,7 @@ const blogdetails = ({ data: blogs }) => {
                   <div
                     key={item?._id}
                     className="card group  cursor-pointer  rounded-lg hover:shadow-lg  transition-all"
-                    onClick={() => router.push(`/Blog/${item?.slug}`)}
+                    onClick={() => router.push(`/blog/${item?.slug}`)}
                   >
                     <figure>
                       <Image

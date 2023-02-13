@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Banner from "../components/Banner/Banner";
+import Brands from "../components/Banner/Brands";
 import Client from "../components/Client/Client";
 import Info from "../components/Info/Info";
 import Operate from "../components/Operate/Operate";
@@ -58,6 +59,7 @@ export default function Home() {
         />
       </Head>
       <Banner></Banner>
+      <Brands></Brands>
       <Services></Services>
       <Info></Info>
       <Client></Client>

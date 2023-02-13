@@ -2,9 +2,9 @@ import axios from "axios";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import BlogCards from "../components/Blogs/BlogCards";
-import BlogsHeader from "../components/Blogs/BlogsHeader";
-import BlogsBanner from "../public/Images/Blogs/blogs_banner.png";
+import BlogCards from "../components/blogs/BlogCards";
+import BlogsHeader from "../components/blogs/BlogsHeader";
+import BlogsBanner from "../public/Images/blogs/blogs_banner.png";
 const Blogs = ({ data }) => {
   return (
     <div className="px-6">

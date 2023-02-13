@@ -11,7 +11,7 @@ const BlogCards = ({ blogs }) => {
           <div
             key={item?._id}
             className="card group  cursor-pointer  rounded-lg hover:shadow-lg  bg-[#0B002D] transition-all"
-            onClick={() => router.push(`/Blog/${item?.slug}`)}
+            onClick={() => router.push(`/blog/${item?.slug}`)}
           >
             <figure>
               <Image
@@ -22,7 +22,7 @@ const BlogCards = ({ blogs }) => {
                 objectFit="cover"
                 className="group-hover:scale-[.99] transition-all"
                 placeholder="blur"
-                blurDataURL="/public/Images/Blogs/blogs_banner.png"
+                blurDataURL="/public/Images/blogs/blogs_banner.png"
               />
             </figure>
             <div className="card-body px-2 lg:px-4 ">
@@ -49,13 +49,13 @@ const BlogCards = ({ blogs }) => {
                   height={60}
                   className="rounded-full cursor-pointer"
                   objectFit="cover"
-                  onClick={() => router.push(`/Blog/${item?.slug}`)}
+                  onClick={() => router.push(`/blog/${item?.slug}`)}
                 ></Image>
                 <div>
                   <h2 className="text-2xl font-bold  font-display  cursor-pointer leading-tight">
                     <span
                       className="link link-underline link-underline-black no-underline hover:text-[#551FFF] transition-all"
-                      onClick={() => router.push(`/Blog/${item?.slug}`)}
+                      onClick={() => router.push(`/blog/${item?.slug}`)}
                     >
                       Zahed Hasan
                     </span>

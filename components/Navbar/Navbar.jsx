@@ -53,12 +53,12 @@ const Navbar = () => {
             </li>
             <li
               className={
-                router.pathname === "/Blogs"
+                router.pathname === "/blogs"
                   ? "border-b-2 !font-semibold border-gray-200 hover:text-gray-300 transition-all"
                   : "hover:border-b-2 border-gray-600 hover:text-gray-300 transition-all"
               }
             >
-              <Link href="/Blogs">Blogs</Link>
+              <Link href="/blogs">Blogs</Link>
             </li>
             {/* <li
               className={
@@ -133,7 +133,7 @@ const Navbar = () => {
               <Link href="/Vision">Vision</Link>
             </li> */}
             <li className="" onClick={() => setMobileNavigation(false)}>
-              <Link href="/Blogs">Blogs</Link>
+              <Link href="/blogs">Blogs</Link>
             </li>
 
             <li className="btn bg-white rounded-full p-4 text-black">

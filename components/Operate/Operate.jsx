@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import style from "./Operate.module.css";
+import { Collapse } from "react-collapse";
 
 let operateInfo = [
   {
@@ -53,8 +54,6 @@ let operateInfo = [
   },
 ];
 const Operate = () => {
-  let [operate, setOperate] = useState(operateInfo[0].id);
-
   return (
     <div className={style.container}>
       <div className={style.heading} data-aos="fade-left" data-aos-delay="200">
@@ -64,69 +63,58 @@ const Operate = () => {
           maximize productivity, and efficiency.
         </p>
       </div>
+      <div className="mt-16">
+        <div className="container  grid grid-cols-4 gap-4 mx-auto">
+          {/* {operateInfo.map((item) => (
+            <div className="w-full rounded" key={item.id}>
+              <img src={item.img} alt="image" />
+            </div>
+          ))} */}
+          <div className="w-full rounded row-span-2  border bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')]">
+            {/* <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              alt="image"
+            /> */}
+          </div>
+          <div className="w-full rounded ">
+            <img
+              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+              alt="image"
+            />
+          </div>
 
-      <div className={style.list} data-aos="fade-right" data-aos-delay="400">
-        <div className={style.listName}>
-          {operateInfo.map((item, i) => {
-            return (
-              <React.Fragment key={item.id}>
-                <div className={style.relative}>
-                  <h4
-                    onClick={() => {
-                      setOperate(i + 1);
-                    }}
-                    style={{
-                      color: `${
-                        item.id !== operate ? "rgb(219,217,217)" : "#fff"
-                      }`,
-                      fontWeight: `${item.id !== operate ? 300 : 600}`,
-                    }}
-                  >
-                    {item.heading}
-                  </h4>
-                  <div
-                    className={style.dot}
-                    style={{
-                      transform: `${
-                        item.id !== operate ? "scale(0)" : "scale(1)"
-                      }`,
-                    }}
-                  ></div>
-                </div>
-              </React.Fragment>
-            );
-          })}
-        </div>
-        <div className={style.listDetails}>
-          <div className={style.boxCover}>
-            {operateInfo.map((item) => {
-              return (
-                <React.Fragment key={item.id}>
-                  <div
-                    className={style.box}
-                    style={{
-                      opacity: `${item.id === operate ? "1" : "0"}`,
-                      transform: `${
-                        item.id !== operate
-                          ? "translateY(0px)"
-                          : "translateY(-10px)"
-                      }`,
-                    }}
-                  >
-                    <div className={style.details}>
-                      <h4 className={style.title}>{item.heading}</h4>
-                      <p className={style.des}>{item.description}</p>
-                    </div>
-                  </div>
-                  {item.id === operate && (
-                    <>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={item.img} alt="image background" />
-                    </>
-                  )}
-                </React.Fragment>
-              );
-            })}
+          <div className="w-full rounded relative">
+            {" "}
+            <p className="text-green-700 text-5xl z-10">Hi</p>
+            <img
+              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+              alt="image"
+              className="absolute top-0 left-0 w-full h-full"
+            />
+          </div>
+          <div className="w-full rounded ">
+            <img
+              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+              alt="image"
+            />
+          </div>
+          <div className="w-full rounded ">
+            <img
+              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+              alt="image"
+            />
+          </div>
+          <div className="w-full rounded ">
+            <img
+              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+              alt="image"
+            />
+          </div>
+          <div className="w-full rounded ">
+            <img
+              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+              alt="image"
+            />
           </div>
         </div>
       </div>
