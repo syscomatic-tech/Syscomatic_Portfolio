@@ -121,3 +121,20 @@ a {
 .ReactCollapse--collapse {
   transition: height 500ms;
 }
+.slider-control-bottomcenter {
+  position: absolute !important;
+  top: 20 !important;
+}
+.slider-control-bottomcenter button {
+  background: #311589 !important;
+  border-radius: 50%;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.slider-control-bottomcenter svg {
+  display: none !important;
+}
+.slider-control-bottomcenter li {
+  margin-right: 5px;
+}

@@ -7,11 +7,13 @@ const BlogCards = ({ blogs }) => {
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-6 gap-x-6 mt-4 py-8    ">
-        {blogs.slice(0, more).map((item) => (
+        {blogs.slice(0, more).map((item, index) => (
           <div
             key={item?._id}
             className="card group  cursor-pointer  rounded-lg hover:shadow-lg  bg-[#0B002D] transition-all"
             onClick={() => router.push(`/blog/${item?.slug}`)}
+            data-aos="fade-up"
+            data-aos-delay={200 + index * 100}
           >
             <figure>
               <Image

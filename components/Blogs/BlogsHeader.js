@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 function BlogsHeader({ blogs }) {
   const router = useRouter();
   return (
-    <div className=" mb-12 ">
+    <div className=" mb-12 " data-aos="fade-right" data-aos-delay="100">
       {blogs?.length > 0 && (
         <>
           {blogs.slice(-1).map((item) => (

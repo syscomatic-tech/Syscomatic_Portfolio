@@ -3,7 +3,7 @@ import style from "./Team.module.css";
 const Team = () => {
   return (
     <div className={style.container}>
-      <div className={style.heading}>
+      <div className={style.heading} data-aos="fade-down" data-aos-delay="200">
         <h3>Meet Our Team</h3>
         <p>
           Syscomatic™ owns a team of some enthusiastic, and passionate people in
@@ -11,7 +11,7 @@ const Team = () => {
         </p>
       </div>
       <ul>
-        <li>
+        <li data-aos="fade-right" data-aos-delay="200">
           <div>
             <img src="Images/Team/rakib.png" alt="" className="my-3" />
             <h4>Rakib Ullah</h4>
@@ -30,7 +30,7 @@ const Team = () => {
             className="my-3"
           />
         </li>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="300">
           <div>
             <img src="Images/Team/shahed.png" alt="" className="my-3" />
             <h4>Shahed Hossain</h4>
@@ -48,7 +48,7 @@ const Team = () => {
             className="my-3"
           />
         </li>
-        <li>
+        <li data-aos="fade-left" data-aos-delay="400">
           <div>
             <img src="Images/Team/asifur.png" alt="" className="my-3" />
             <h4>Asifur Rahman</h4>
@@ -66,7 +66,7 @@ const Team = () => {
             className="my-3"
           />
         </li>
-        <li>
+        <li data-aos="fade-right" data-aos-delay="500">
           <div>
             <img src="Images/Team/thauhid.png" alt="" className="my-3" />
             <h4>Thauhid Hussain</h4>
@@ -84,7 +84,7 @@ const Team = () => {
             className="my-3"
           />
         </li>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="600">
           <div>
             <img src="Images/Team/zahed.png" alt="" className="my-3" />
             <h4>Zahed Hasan</h4>
@@ -102,7 +102,7 @@ const Team = () => {
             className="my-3"
           />
         </li>
-        <li>
+        <li data-aos="fade-left" data-aos-delay="700">
           <div>
             <img src="Images/Team/Shuvro.png" alt="" className="my-3" />
             <h4>Shuvro Baset</h4>
@@ -120,7 +120,7 @@ const Team = () => {
             className="my-3"
           />
         </li>
-        <li>
+        <li data-aos="fade-right" data-aos-delay="800">
           <div>
             <img src="Images/Team/jisan.png" alt="" className="my-3" />
             <h4>Jisan Mia</h4>
@@ -138,7 +138,7 @@ const Team = () => {
             className="my-3"
           />
         </li>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="900">
           <div>
             <img src="Images/Team/sabbir.png" alt="" className="my-3" />
             <h4>Md. Sabbir Hossain</h4>

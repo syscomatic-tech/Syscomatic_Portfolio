@@ -1,13 +1,12 @@
 import React from "react";
-
 const Brands = () => {
   const brandImages = [
-    "/public/Images/Brands/onnow.png",
-    "/public/Images/Brands/buet.png",
-    "/public/Images/Brands/du.png",
-    "/public/Images/Brands/tunibibi.png",
-    "/public/Images/Brands/poc.png",
-    "/public/Images/Brands/fuel.png",
+    "Images/Brands/onnow.png",
+    "Images/Brands/buet.png",
+    "Images/Brands/du.png",
+    "Images/Brands/tunibibi.png",
+    "Images/Brands/poc.png",
+    "Images/Brands/fuel.png",
   ];
   return (
     <section class="mb-48">
@@ -20,8 +19,10 @@ const Brands = () => {
                   key={index}
                   href="#"
                   class="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
+                  data-aos-delay={200 + index * 100}
+                  data-aos="fade-up"
                 >
-                  <img src="item" alt="image" class="h-10 w-full" />
+                  <img src={item} alt="image" class="" />
                 </a>
               ))}
             </div>

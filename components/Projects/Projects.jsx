@@ -8,8 +8,8 @@ const Projects = () => {
         <h3>Portfolio</h3>
         <p>Take a look at some of our successful projects</p>
       </div>
-      <ul data-aos="fade-up" data-aos-delay="400">
-        <li>
+      <ul>
+        <li data-aos="fade-right" data-aos-delay="200">
           <div>
             <img src="Images/Projects/onnow.png" alt="" />
           </div>
@@ -36,7 +36,7 @@ const Projects = () => {
             </button>
           </Link>
         </li>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="300">
           <div>
             <img src="Images/Projects/urgentfuel.png" alt="" />
           </div>
@@ -61,7 +61,7 @@ const Projects = () => {
             </button>
           </Link>
         </li>
-        <li>
+        <li data-aos="fade-left" data-aos-delay="400">
           <div>
             <img src="Images/Projects/pocacademy.png" alt="" />
           </div>
@@ -86,7 +86,7 @@ const Projects = () => {
             </button>
           </Link>
         </li>
-        <li>
+        <li data-aos="fade-right" data-aos-delay="500">
           <div>
             <img src="Images/Projects/tunibibi.png" alt="" />
           </div>
@@ -111,7 +111,7 @@ const Projects = () => {
             </button>
           </Link>
         </li>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="600">
           <div>
             <img src="Images/Projects/buet.png" alt="" />
           </div>
@@ -136,7 +136,7 @@ const Projects = () => {
             </button>
           </Link>
         </li>
-        <li>
+        <li data-aos="fade-left" data-aos-delay="700">
           <div>
             <img src="Images/Projects/du.png" alt="" />
           </div>

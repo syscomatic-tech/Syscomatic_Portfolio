@@ -6,54 +6,48 @@ let operateInfo = [
   {
     id: 1,
     heading: "Analysis",
-    description:
-      "The first step involves understanding the requirements and goals of the product. The team gathers information and analyzes the market to determine what the product should do and what the target audience needs.",
+    description: "Gather requirements, analyze market to determine goals.",
     img: "https://images.unsplash.com/photo-1588600878108-578307a3cc9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80",
   },
   {
     id: 2,
     heading: "Planning",
-    description:
-      "The next step is to create a plan for how to build the product. This includes defining the scope of the project, identifying the resources needed, and setting a timeline.",
+    description: "Define project scope, timeline, identify resources.",
     img: "https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
   },
   {
     id: 3,
     heading: "Design",
-    description:
-      "In this step, the team creates a visual representation of the product, including wireframes and mockups. They also determine the user experience and the user interface.",
+    description: "Create visual representation, determine UX/UI.",
     img: "https://images.unsplash.com/photo-1620912189875-3fdb2380621b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
   },
   {
     id: 4,
     heading: "Development",
-    description:
-      "The actual software development takes place in this step. The team writes code, integrates different components, and builds the product.",
+    description: "Write code, integrate components, build product.",
     img: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
   },
   {
     id: 5,
     heading: "Testing",
-    description:
-      "The product is thoroughly tested to ensure it works as intended and meets quality standards. This includes both manual testing by the team and automated testing using tools.",
+    description: "Ensure product works, meets quality standards.",
     img: "https://images.unsplash.com/photo-1577760258779-e787a1733016?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
   },
   {
     id: 6,
     heading: "Deployment",
-    description:
-      "Once the product is deemed ready, it is deployed to a live environment where it is available to users.",
+    description: "Successfully deploy and make product accessible to users.",
     img: "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
   },
   {
     id: 7,
     heading: "Maintenance",
-    description:
-      "The final step is to provide ongoing support and maintenance for the product. This includes fixing bugs, adding new features, and keeping the product up to date.",
+    description: "Fix bugs, add features, keep product updated.",
     img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
   },
 ];
 const Operate = () => {
+  const [hoverd, setHoverd] = useState(null);
   return (
     <div className={style.container}>
       <div className={style.heading} data-aos="fade-left" data-aos-delay="200">
@@ -65,57 +59,37 @@ const Operate = () => {
       </div>
       <div className="mt-16">
         <div className="container  grid grid-cols-4 gap-4 mx-auto">
-          {/* {operateInfo.map((item) => (
-            <div className="w-full rounded" key={item.id}>
-              <img src={item.img} alt="image" />
+          {operateInfo.map((item) => (
+            <div
+              className={
+                item.id === 1
+                  ? "relative w-full row-span-2 h-[560px] bg-center bg-cover bg-no-repeat cursor-pointer"
+                  : "relative   w-full h-[270px] bg-center bg-cover bg-no-repeat cursor-pointer"
+              }
+              onMouseEnter={() => setHoverd(item.id)}
+              onMouseLeave={() => setHoverd(null)}
+              style={{
+                backgroundImage: `${
+                  hoverd === item.id
+                    ? `linear-gradient(180deg, rgba(7, 0, 29, 0.5) 0%, rgba(12, 0, 51, 0.8) 100%), url(${item.img})`
+                    : `linear-gradient(rgba(12,0,51,0.5), rgba(12,0,51,0.5)), url(${item.img})`
+                }`,
+              }}
+              data-aos="fade-up"
+              data-aos-delay={100 + item.id * 200}
+              key={item.id}
+            >
+              <div className="  absolute bottom-0 left-0 px-4 pb-4">
+                <h4 className={`text-6xl  font-bold mb-4 ${style.strokedText}`}>
+                  {item.id}
+                </h4>
+                <h4 className="text-4xl font-bold mb-4">{item.heading}</h4>
+                <Collapse isOpened={hoverd === item.id}>
+                  <span className="text-gray-200 ">{item.description}</span>
+                </Collapse>
+              </div>
             </div>
-          ))} */}
-          <div className="w-full rounded row-span-2  border bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')]">
-            {/* <img
-              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-              alt="image"
-            /> */}
-          </div>
-          <div className="w-full rounded ">
-            <img
-              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-              alt="image"
-            />
-          </div>
-
-          <div className="w-full rounded relative">
-            {" "}
-            <p className="text-green-700 text-5xl z-10">Hi</p>
-            <img
-              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-              alt="image"
-              className="absolute top-0 left-0 w-full h-full"
-            />
-          </div>
-          <div className="w-full rounded ">
-            <img
-              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-              alt="image"
-            />
-          </div>
-          <div className="w-full rounded ">
-            <img
-              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-              alt="image"
-            />
-          </div>
-          <div className="w-full rounded ">
-            <img
-              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-              alt="image"
-            />
-          </div>
-          <div className="w-full rounded ">
-            <img
-              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-              alt="image"
-            />
-          </div>
+          ))}
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Collapse } from "react-collapse";
 import style from "./Info.module.css";
+import logo from "../../public/logo2.png";
 const Info = () => {
   const [open, setOpen] = useState(null);
   const toggle = (index) => {

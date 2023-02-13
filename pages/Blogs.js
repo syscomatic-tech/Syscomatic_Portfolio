@@ -18,7 +18,7 @@ const Blogs = ({ data }) => {
           width={1440}
           height={200}
           className=" mt-40 mb-28"
-          // unoptimized={true}
+          data-aos="fade-left"
         ></Image>
       </div>
       <BlogsHeader blogs={data}></BlogsHeader>
