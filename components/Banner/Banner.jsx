@@ -33,7 +33,6 @@ const Banner = () => {
             className={`btn normal-case button`}
             data-aos="zoom-in"
             data-aos-delay="1800"
-            id="services"
           >
             Get a Quote
           </button>

@@ -9,7 +9,7 @@ const Brands = () => {
     "Images/Brands/fuel.png",
   ];
   return (
-    <section class="mb-48">
+    <section class="mb-48" id="services">
       <div class="container mx-auto">
         <div class="-mx-4 flex flex-wrap">
           <div class="w-full px-4">

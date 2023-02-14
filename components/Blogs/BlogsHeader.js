@@ -6,6 +6,11 @@ function BlogsHeader({ blogs }) {
   const router = useRouter();
   return (
     <div className=" mb-12 " data-aos="fade-right" data-aos-delay="100">
+      <div className="flex items-center justify-center space-x-4 mb-24 mt-12 bg-primary py-5 rounded-lg">
+        <p className="bg-[#6e42ff] text-white">All</p>
+        <p>Web Development</p>
+        <p>App Development</p>
+      </div>
       {blogs?.length > 0 && (
         <>
           {blogs.slice(-1).map((item) => (

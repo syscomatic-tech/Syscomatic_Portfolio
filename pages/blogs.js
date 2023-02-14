@@ -2,10 +2,11 @@ import axios from "axios";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import BlogCards from "../components/blogs/BlogCards";
-import BlogsHeader from "../components/blogs/BlogsHeader";
-import BlogsBanner from "../public/Images/blogs/blogs_banner.png";
+import BlogCards from "../components/Blogs/BlogCards.js";
+import BlogsHeader from "../components/Blogs/BlogsHeader.js";
+import BlogsBanner from "./../public/Images/Blogs/blogs_banner.png";
 const Blogs = ({ data }) => {
+  console.log(data);
   return (
     <div className="px-6">
       <Head>
@@ -17,7 +18,7 @@ const Blogs = ({ data }) => {
           alt={"blog"}
           width={1440}
           height={200}
-          className=" mt-40 mb-28"
+          className=" mt-40 mb-8"
           data-aos="fade-left"
         ></Image>
       </div>
