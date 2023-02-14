@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import { Collapse } from "react-collapse";
 import style from "./About.module.css";
 const About = () => {
+  const [hoverd, setHoverd] = useState(null);
   return (
     <div className={style.container}>
       <div>
@@ -59,39 +61,60 @@ const About = () => {
         </div>
         <div className="flex items-center justify-between flex-col lg:flex-row">
           <div
-            className=" relative  w-full my-2 lg:my-0 lg:w-1/2 h-[300px] lg:h-[475px]  bg-center bg-cover bg-no-repeat px-8 pb-4"
+            className=" relative  w-full my-2 lg:my-0 lg:w-1/2 h-[300px] lg:h-[475px]  bg-center bg-cover bg-no-repeat px-8 pb-4 cursor-pointer"
+            // style={{
+            //   backgroundImage:
+            //     "linear-gradient(rgba(12,0,51,0.8), rgba(12,0,51,0.8)), url(Images/About/mission.jpg)",
+            // }}
             style={{
-              backgroundImage:
-                "linear-gradient(rgba(12,0,51,0.8), rgba(12,0,51,0.8)), url(Images/About/mission.jpg)",
+              backgroundImage: `${
+                hoverd === 1
+                  ? `linear-gradient(180deg, rgba(7, 0, 29, 0.5) 0%, rgba(12, 0, 51, 0.8) 100%), url(Images/About/mission.jpg)`
+                  : `linear-gradient(rgba(12,0,51,0.5), rgba(12,0,51,0.5)), url(Images/About/mission.jpg)`
+              }`,
             }}
             data-aos="fade-right"
             data-aos-delay="500"
+            onMouseEnter={() => setHoverd(1)}
+            onMouseLeave={() => setHoverd(null)}
           >
             <div className="  absolute bottom-10 ">
               <h4 className="text-4xl font-bold mb-4">Mission</h4>
-              <span className="text-gray-200 ">
-                {" "}
-                Empowering people with trusted digital leadership solutions.
-              </span>
+              <Collapse isOpened={hoverd === 1}>
+                <span className="text-gray-200 ">
+                  Empowering people with trusted digital leadership solutions.
+                </span>
+              </Collapse>
             </div>
           </div>
 
           <div
-            className=" relative lg:ml-5 w-full my-2 lg:my-0 lg:w-1/2 h-[300px] lg:h-[475px]  bg-center bg-cover bg-no-repeat px-8 pb-4"
+            className=" relative lg:ml-5 w-full my-2 lg:my-0 lg:w-1/2 h-[300px] lg:h-[475px]  bg-center bg-cover bg-no-repeat px-8 pb-4 cursor-pointer"
+            // style={{
+            //   backgroundImage:
+            //     "linear-gradient(rgba(12,0,51,0.8), rgba(12,0,51,0.8)), url(Images/About/vission.jpg)",
+            // }}
             style={{
-              backgroundImage:
-                "linear-gradient(rgba(12,0,51,0.8), rgba(12,0,51,0.8)), url(Images/About/vission.jpg)",
+              backgroundImage: `${
+                hoverd === 2
+                  ? `linear-gradient(180deg, rgba(7, 0, 29, 0.5) 0%, rgba(12, 0, 51, 0.8) 100%), url(Images/About/vission.jpg)`
+                  : `linear-gradient(rgba(12,0,51,0.5), rgba(12,0,51,0.5)), url(Images/About/vission.jpg)`
+              }`,
             }}
             data-aos="fade-left"
             data-aos-delay="800"
+            onMouseEnter={() => setHoverd(2)}
+            onMouseLeave={() => setHoverd(null)}
           >
             <div className="  absolute bottom-10 ">
               <h4 className="text-4xl font-bold mb-4">Vission</h4>
-              <span className="text-gray-200 ">
-                {" "}
-                To deliver best-in-class business solutions utilizing technology
-                by the best people.
-              </span>
+              <Collapse isOpened={hoverd === 2}>
+                <span className="text-gray-200 ">
+                  {" "}
+                  To deliver best-in-class business solutions utilizing
+                  technology by the best people.
+                </span>
+              </Collapse>
             </div>
           </div>
         </div>

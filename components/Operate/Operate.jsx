@@ -58,12 +58,12 @@ const Operate = () => {
         </p>
       </div>
       <div className="mt-16">
-        <div className="container  grid grid-cols-4 gap-4 mx-auto">
+        <div className="container  grid grid-cols-1 lg:grid-cols-4 gap-4 mx-auto">
           {operateInfo.map((item) => (
             <div
               className={
                 item.id === 1
-                  ? "relative w-full row-span-2 h-[560px] bg-center bg-cover bg-no-repeat cursor-pointer"
+                  ? "relative w-full lg:row-span-2 h-[270px] lg:h-[560px] bg-center bg-cover bg-no-repeat cursor-pointer"
                   : "relative   w-full h-[270px] bg-center bg-cover bg-no-repeat cursor-pointer"
               }
               onMouseEnter={() => setHoverd(item.id)}
