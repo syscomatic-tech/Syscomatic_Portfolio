@@ -70,7 +70,7 @@ const blogdetails = ({ data: blogs }) => {
                   <div
                     key={item?._id}
                     className="card group  cursor-pointer  rounded-lg hover:shadow-lg  transition-all"
-                    onClick={() => router.push(`/blog/${item?.slug}`)}
+                    onClick={() => router.push(`/blogs/${item?.slug}`)}
                     data-aos="fade-up"
                     data-aos-delay={100 + index * 100}
                   >

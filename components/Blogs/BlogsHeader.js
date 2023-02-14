@@ -21,7 +21,7 @@ function BlogsHeader({ blogs }) {
                   height={300}
                   className="rounded-lg  group-hover:scale-[.99] transition-all"
                   objectFit="cover"
-                  onClick={() => router.push(`/blog/${item?.slug}`)}
+                  onClick={() => router.push(`/blogs/${item?.slug}`)}
                   placeholder="blur"
                   blurDataURL="/public/Images/blogs/blogs_banner.png"
                 />
@@ -33,7 +33,7 @@ function BlogsHeader({ blogs }) {
                 <h2 className="text-2xl font-bold  font-display  cursor-pointer leading-tight">
                   <span
                     className="link link-underline link-underline-black no-underline hover:text-[#6e42ff] transition-all"
-                    onClick={() => router.push(`/blog/${item?.slug}`)}
+                    onClick={() => router.push(`/blogs/${item?.slug}`)}
                   >
                     {item?.blogTitle}
                   </span>
@@ -52,13 +52,13 @@ function BlogsHeader({ blogs }) {
                     height={60}
                     className="rounded-full cursor-pointer"
                     objectFit="cover"
-                    onClick={() => router.push(`/blog/${item?.slug}`)}
+                    onClick={() => router.push(`/blogs/${item?.slug}`)}
                   ></Image>
                   <div>
                     <h2 className="text-2xl font-bold  font-display  cursor-pointer leading-tight">
                       <span
                         className="link link-underline link-underline-black no-underline hover:text-[#551FFF] transition-all"
-                        onClick={() => router.push(`/blog/${item?.slug}`)}
+                        onClick={() => router.push(`/blogs/${item?.slug}`)}
                       >
                         Zahed Hasan
                       </span>
