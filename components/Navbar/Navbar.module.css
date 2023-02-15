@@ -144,3 +144,143 @@
     opacity: 0.7;
   }
 }
+
+/* code for modal  */
+
+.contact {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 50px;
+  gap: 25px;
+  flex-basis: 40%;
+  height: 414px;
+
+  background: #0c0033;
+  /* #551FFF */
+  border: 1px solid #551fff;
+  border-radius: 12px;
+}
+.contact label {
+  height: 20px;
+
+  /* font-family: 'Poppins'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+  /* identical to box height */
+
+  /* #9C99A5 */
+
+  color: #9c99a5;
+}
+.contact input {
+  /* input[type=text] { */
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #9c99a5;
+  /* } */
+}
+.contact input:focus {
+  outline: none;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
+.contact .createBtn {
+  padding: 12px 24px;
+  gap: 10px;
+
+  width: 201px;
+  height: 54px;
+
+  /* #FFFFFF */
+
+  background: #ffffff;
+  border: none;
+  border-radius: 34px;
+
+  /* font-family: 'Poppins'; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  /* line-height: 30px; */
+  /* identical to box height */
+
+  /* #311589 */
+  cursor: pointer;
+  color: #311589;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.contact .createBtn:hover {
+  background: #311589;
+  color: white;
+  border: white;
+}
+.inputContainer {
+  position: relative;
+}
+
+.inputContainer label {
+  @apply absolute bottom-2;
+  transition: all 0.3s ease;
+}
+
+.inputContainer input:focus ~ label,
+.inputContainer input:valid ~ label {
+  @apply text-[15px];
+  transform: translateY(-30px);
+  left: 0;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .contact {
+    padding: 30px;
+  }
+  .createBtn {
+    padding: 12px 16px;
+
+    width: 251px !important;
+    height: 54px;
+
+    font-size: 20px;
+
+    color: #311589;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contact {
+    width: 100%;
+    padding: 50px 40px;
+    gap: 25px;
+    flex-basis: 40%;
+  }
+
+  .contact .createBtn {
+    padding: 12px 24px;
+    gap: 10px;
+
+    width: auto;
+    height: 54px;
+
+    /* #FFFFFF */
+
+    background: #ffffff;
+    border: none;
+    border-radius: 34px;
+
+    /* font-family: 'Poppins'; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    /* line-height: 30px; */
+    /* identical to box height */
+
+    /* #311589 */
+
+    color: #311589;
+  }
+}

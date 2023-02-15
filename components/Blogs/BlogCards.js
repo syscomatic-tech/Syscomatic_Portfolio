@@ -9,7 +9,7 @@ const BlogCards = ({ blogs }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-6 gap-x-6 mt-4 py-8    ">
         {blogs.slice(0, more).map((item, index) => (
           <div
-            key={item?._id}
+            key={index}
             className="card group  cursor-pointer  rounded-lg hover:shadow-lg  bg-[#0B002D] transition-all"
             onClick={() => router.push(`/blogs/${item?.slug}`)}
             data-aos="fade-up"
@@ -29,7 +29,7 @@ const BlogCards = ({ blogs }) => {
             </figure>
             <div className="card-body px-2 lg:px-4 ">
               <h2 className="text-xl font-bold  font-display max-w-sm  leading-tight">
-                <span className="text-[#551FFF] font-semibold text-md mb-2">
+                <span className="text-[#6e42ff] font-semibold text-md mb-2">
                   {item?.category}
                 </span>{" "}
                 <br /> <br />
@@ -44,22 +44,28 @@ const BlogCards = ({ blogs }) => {
                 }}
               ></p>
               <div className="flex items-center mt-8 space-x-4">
-                <Image
-                  src={item?.blogImg}
-                  alt="Blog Image"
-                  width={60}
-                  height={60}
-                  className="rounded-full cursor-pointer"
-                  objectFit="cover"
-                  onClick={() => router.push(`/blogs/${item?.slug}`)}
-                ></Image>
+                {item?.user ? (
+                  <Image
+                    src={item?.user?.photo}
+                    alt="User"
+                    width={60}
+                    height={60}
+                    className="rounded-full cursor-pointer"
+                    objectFit="cover"
+                    onClick={() => router.push(`/blogs/${item?.slug}`)}
+                  ></Image>
+                ) : (
+                  <div className="w-[60px] h-[60px] rounded-full bg-[#6e42ff]"></div>
+                )}
                 <div>
                   <h2 className="text-2xl font-bold  font-display  cursor-pointer leading-tight">
                     <span
-                      className="link link-underline link-underline-black no-underline hover:text-[#551FFF] transition-all"
+                      className="link link-underline link-underline-black no-underline hover:text-[#6e42ff] transition-all"
                       onClick={() => router.push(`/blogs/${item?.slug}`)}
                     >
-                      Zahed Hasan
+                      {item?.user
+                        ? item?.user?.firstName + " " + item?.user?.lastName
+                        : "Anonymous "}
                     </span>
                   </h2>
                   <p className="text-gray-400 my-1 font-semibold text-md">

@@ -1,8 +1,10 @@
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { Collapse } from "react-collapse";
 import style from "./About.module.css";
 const About = () => {
   const [hoverd, setHoverd] = useState(null);
+  const router = useRouter();
   return (
     <div className={style.container}>
       <div>
@@ -62,10 +64,6 @@ const About = () => {
         <div className="flex items-center justify-between flex-col lg:flex-row">
           <div
             className=" relative  w-full my-2 lg:my-0 lg:w-1/2 h-[300px] lg:h-[475px]  bg-center bg-cover bg-no-repeat px-8 pb-4 cursor-pointer"
-            // style={{
-            //   backgroundImage:
-            //     "linear-gradient(rgba(12,0,51,0.8), rgba(12,0,51,0.8)), url(Images/About/mission.jpg)",
-            // }}
             style={{
               backgroundImage: `${
                 hoverd === 1
@@ -77,6 +75,7 @@ const About = () => {
             data-aos-delay="500"
             onMouseEnter={() => setHoverd(1)}
             onMouseLeave={() => setHoverd(null)}
+            onClick={() => router.push("/mission")}
           >
             <div className="  absolute bottom-10 ">
               <h4 className="text-4xl font-bold mb-4">Mission</h4>
@@ -90,10 +89,6 @@ const About = () => {
 
           <div
             className=" relative lg:ml-5 w-full my-2 lg:my-0 lg:w-1/2 h-[300px] lg:h-[475px]  bg-center bg-cover bg-no-repeat px-8 pb-4 cursor-pointer"
-            // style={{
-            //   backgroundImage:
-            //     "linear-gradient(rgba(12,0,51,0.8), rgba(12,0,51,0.8)), url(Images/About/vission.jpg)",
-            // }}
             style={{
               backgroundImage: `${
                 hoverd === 2
@@ -105,6 +100,7 @@ const About = () => {
             data-aos-delay="800"
             onMouseEnter={() => setHoverd(2)}
             onMouseLeave={() => setHoverd(null)}
+            onClick={() => router.push("/vision")}
           >
             <div className="  absolute bottom-10 ">
               <h4 className="text-4xl font-bold mb-4">Vission</h4>

@@ -23,16 +23,44 @@ const Banner = () => {
           data-aos="fade-left"
           data-aos-delay="600"
         >
-          <label htmlFor="">Full Name*</label>
-          <input type="text" name="name" id="" />
-          <label htmlFor="">Email</label>
-          <input type="email" name="email" id="" />
-          <label htmlFor="">Your Message</label>
-          <input type="text" name="message" id="" />
+          <div className={`relative ${style.inputContainer} mb-12`}>
+            <input
+              type="text"
+              id="name"
+              className="w-full border-b-2  focus:outline-none focus:border-b-primary"
+              required
+            />
+            <label htmlFor="name" className=" mb-1 left-1 cursor-text">
+              Full Name
+            </label>
+          </div>
+          <div className={`relative ${style.inputContainer} mb-12`}>
+            <input
+              type="email"
+              id="email"
+              className="w-full border-b-2  focus:outline-none focus:border-b-primary"
+              required
+            />
+            <label htmlFor="email" className=" mb-1 left-1 cursor-text">
+              Email
+            </label>
+          </div>
+          <div className={`relative ${style.inputContainer} mb-4`}>
+            <input
+              type="text"
+              id="text"
+              className="w-full border-b-2  focus:outline-none focus:border-b-primary"
+              required
+            />
+            <label htmlFor="text" className=" mb-1 left-1 cursor-text">
+              Your Message
+            </label>
+          </div>
+
           <button
             className={`btn normal-case button`}
-            data-aos="zoom-in"
-            data-aos-delay="1800"
+            data-aos="fade-up"
+            data-aos-delay="1400"
           >
             Get a Quote
           </button>

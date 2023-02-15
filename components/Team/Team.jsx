@@ -104,11 +104,11 @@ const Team = () => {
         </li>
         <li data-aos="fade-left" data-aos-delay="700">
           <div>
-            <img src="Images/Team/Shuvro.png" alt="" className="my-3" />
+            <img src="Images/Team/shuvro.png" alt="" className="my-3" />
             <h4>Shuvro Baset</h4>
-            <h5></h5>
+            <h5>Full Stack Engineer</h5>
             <p>
-              Abdul Baset is an experienced full-stack engineer. He is well
+              Shuvro Baset is an experienced full-stack engineer. He is well
               known for problem solving & logical decisions.
             </p>
           </div>

@@ -7,10 +7,12 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Router } from "next/router";
+import { QueryClientProvider, QueryClient } from "react-query";
 
 function MyApp({ Component, pageProps }) {
+  const queryClient = new QueryClient();
   const progress = new ProgressBar({
-    size: 4,
+    size: 5,
     color: "#311589",
     className: "z-50",
     delay: "100",
@@ -34,7 +36,9 @@ function MyApp({ Component, pageProps }) {
       <Navbar></Navbar>
       <div className="max-w-[1440px] mx-auto">
         <div className="mt-[80px]">
-          <Component {...pageProps} />
+          <QueryClientProvider client={queryClient}>
+            <Component {...pageProps} />
+          </QueryClientProvider>
         </div>
         {/* <ContactUs></ContactUs> */}
       </div>

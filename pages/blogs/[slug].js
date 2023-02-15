@@ -50,8 +50,13 @@ const blogdetails = ({ data: blogs }) => {
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                Written by <span className="underline">Shakib Al Hasan</span> ;
-                published on {blog?.createdDate?.slice(0, 10)}
+                Written by{" "}
+                <span className="underline">
+                  {blog?.user
+                    ? blog?.user?.firstName + " " + blog?.user?.lastName
+                    : "Anonymous "}
+                </span>{" "}
+                ; published on {blog?.createdDate?.slice(0, 10)}
               </p>
               <p
                 className="text-gray-300 mt-8  text-lg"

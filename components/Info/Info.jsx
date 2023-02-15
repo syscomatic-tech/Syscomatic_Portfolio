@@ -46,7 +46,7 @@ const Info = () => {
   return (
     <div className={style.container}>
       <div className={style.static} data-aos="fade-right" data-aos-delay="200">
-        <img src="logo2.png" alt="" />
+        <img src="Images/logo2.png" alt="" />
         <p>
           Syscomatic is software development as a service (SDass) Platform with
           a business-first approach. We offer a variety of value-adding
