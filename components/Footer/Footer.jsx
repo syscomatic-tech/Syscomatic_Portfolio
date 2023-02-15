@@ -1,7 +1,30 @@
 import Link from "next/link";
+import axios from "axios";
 import React from "react";
+import { toast } from "react-toastify";
 import style from "./Footer.module.css";
 const Footer = () => {
+  const sendMessage = (e) => {
+    e.preventDefault();
+    const { name, email, text } = e.target;
+
+    axios
+      .post("https://api.server.syscomatic.com/api/v1/sendMail", {
+        subject: name.value,
+        from: email.value,
+        text: text.value,
+      })
+      .then(({ data }) => {
+        if (data.status === 200) {
+          toast.success("Message sent successfully!");
+          e.target.reset();
+        }
+      })
+      .catch(() => {
+        toast.error("Oops! Something went wrong!");
+        e.target.reset();
+      });
+  };
   return (
     <div className={style.container}>
       <div
@@ -126,37 +149,40 @@ const Footer = () => {
           >
             ✕
           </label>
-          <div className={style.contact}>
+          <form className={style.contact} onSubmit={sendMessage}>
             <div className={`relative ${style.inputContainer} mb-12`}>
               <input
                 type="text"
-                id="modalname"
+                id="name"
+                name="name"
                 className="w-full border-b-2  focus:outline-none focus:border-b-primary"
                 required
               />
-              <label htmlFor="modalname" className=" mb-1 left-1 cursor-text">
+              <label htmlFor="name" className=" mb-1 left-1 cursor-text">
                 Full Name
               </label>
             </div>
             <div className={`relative ${style.inputContainer} mb-12`}>
               <input
                 type="email"
-                id="modalemail"
+                id="email"
+                name="email"
                 className="w-full border-b-2  focus:outline-none focus:border-b-primary"
                 required
               />
-              <label htmlFor="modalemail" className=" mb-1 left-1 cursor-text">
+              <label htmlFor="email" className=" mb-1 left-1 cursor-text">
                 Email
               </label>
             </div>
             <div className={`relative ${style.inputContainer} mb-4`}>
               <input
                 type="text"
-                id="modaltext"
+                id="text"
+                name="text"
                 className="w-full border-b-2  focus:outline-none focus:border-b-primary"
                 required
               />
-              <label htmlFor="modaltext" className=" mb-1 left-1 cursor-text">
+              <label htmlFor="text" className=" mb-1 left-1 cursor-text">
                 Your Message
               </label>
             </div>
@@ -165,10 +191,11 @@ const Footer = () => {
               className={`btn normal-case button`}
               data-aos="fade-up"
               data-aos-delay="100"
+              type="submit"
             >
               Get a Quote
             </button>
-          </div>
+          </form>
         </label>
       </label>
     </div>

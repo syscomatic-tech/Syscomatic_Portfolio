@@ -43,7 +43,7 @@ const Testimonials = () => {
           wrapAround={true}
           renderCenterLeftControls={({ previousSlide }) => (
             <button
-              className="btn  btn-circle bg-white text-black border-0 hover:bg-primary hover:text-white  mt-4"
+              className="btn  btn-circle lg:btn-md btn-sm bg-white text-black border-0 hover:bg-primary hover:text-white  mt-4"
               onClick={previousSlide}
             >
               <svg
@@ -52,7 +52,7 @@ const Testimonials = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-7 h-7 font-bold"
+                className="lg:w-7 lg:h-7 w-4 h-4 font-bold"
               >
                 <path
                   strokeLinecap="round"
@@ -66,7 +66,7 @@ const Testimonials = () => {
           data-aos-delay="100"
           renderCenterRightControls={({ nextSlide }) => (
             <button
-              className="btn  left-16 btn-circle hover:text-white bg-white text-black border-0 hover:bg-primary mt-4"
+              className="btn lg:btn-md btn-sm btn-circle hover:text-white bg-white text-black border-0 hover:bg-primary mt-4"
               onClick={nextSlide}
             >
               <svg
@@ -75,7 +75,7 @@ const Testimonials = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-7 h-7"
+                className="lg:w-7 lg:h-7 w-4 h-4 font-bold"
               >
                 <path
                   strokeLinecap="round"
@@ -97,6 +97,11 @@ const Testimonials = () => {
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullscreen
+                  srcDoc={`<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=${
+                    item.link
+                  }/><img src=https://img.youtube.com/vi/${item.link.slice(
+                    -11
+                  )}/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>`}
                 ></iframe>
               </div>
               <div className={style.testimonial}>

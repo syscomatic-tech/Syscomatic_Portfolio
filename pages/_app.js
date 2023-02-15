@@ -8,6 +8,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Router } from "next/router";
 import { QueryClientProvider, QueryClient } from "react-query";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function MyApp({ Component, pageProps }) {
   const queryClient = new QueryClient();
@@ -43,6 +45,16 @@ function MyApp({ Component, pageProps }) {
         {/* <ContactUs></ContactUs> */}
       </div>
       <Footer></Footer>
+      <ToastContainer
+        position="top-right"
+        autoClose={8000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        draggable={false}
+        pauseOnVisibilityChange
+        closeOnClick
+        pauseOnHover
+      />
     </div>
   );
 }

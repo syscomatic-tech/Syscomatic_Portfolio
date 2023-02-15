@@ -25,14 +25,16 @@ const Blogs = ({ data }) => {
           data-aos="fade-left"
         ></Image>
       </div>
-      <div className="flex items-center justify-center space-x-4 mb-24 mt-12 bg-primary py-5 rounded-lg">
+      <div className="flex items-center justify-center space-x-4 mb-24 mt-12 bg-primary py-5 rounded-lg overflow-x-scroll overflow-y-hidden">
         <button
           className={
             !router.query.category
               ? "bg-[#6e42ff] py-2 px-5 rounded-[41px] text-white cursor-pointer "
               : " py-2 px-5 rounded-[41px] text-white cursor-pointer hover:bg-[#6e42ff2c] transition-all"
           }
-          onClick={() => router.push(`/blogs`)}
+          onClick={() => {
+            router.push("/blogs", undefined, { shallow: true });
+          }}
         >
           All
         </button>
@@ -41,7 +43,7 @@ const Blogs = ({ data }) => {
             className={
               router.query.category === item._id
                 ? "bg-[#6e42ff] py-2 px-5 rounded-[41px] text-white cursor-pointer"
-                : " py-2 px-5 rounded-[41px] text-white cursor-pointer hover:bg-[#6e42ff2c] transition-all"
+                : " py-2 px-5 rounded-[41px] text-white cursor-pointer mx-4 hover:bg-[#6e42ff2c] transition-all"
             }
             key={index}
             onClick={() => {
@@ -64,7 +66,6 @@ export async function getServerSideProps({ query }) {
   // Fetch data from external API
 
   const { data } = await axios.get(
-    // `https://api.server.syscomatic.com/api/v1/AllBlogList`
     `https://api.server.syscomatic.com/api/v1/AllBlogList?category=${query.category}`
   );
   // Pass data to the page via props

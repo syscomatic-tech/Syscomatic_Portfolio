@@ -1,5 +1,5 @@
 import Carousel from "nuka-carousel/lib/carousel";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 const Brands = () => {
   const brandImages = [
     "Images/Brands/onnow.png",
@@ -15,6 +15,30 @@ const Brands = () => {
     "Images/Brands/buet.png",
     "Images/Brands/onnow.png",
   ];
+
+  const [screenWidth, setScreenWidth] = useState(null);
+  const [counter, setCounter] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCounter((counter) => counter + 1);
+    }, 1000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setScreenWidth(window.innerWidth);
+    }
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [screenWidth, counter]);
   return (
     <section class="mb-48" id="services">
       <div class="container mx-auto">
@@ -22,12 +46,12 @@ const Brands = () => {
           <div class="w-full px-4">
             {/* <div class="flex flex-wrap items-center justify-between"> */}
             <Carousel
-              animation="fade"
+              // animation="fade"
               autoplay
               pauseOnHover
-              autoplayInterval={8000}
-              speed={2500}
-              slidesToShow={6}
+              autoplayInterval={3000}
+              speed={500}
+              slidesToShow={screenWidth > 768 ? 6 : screenWidth > 500 ? 3 : 2}
               wrapAround={true}
               renderBottomCenterControls={false}
               renderCenterLeftControls={
@@ -39,8 +63,9 @@ const Brands = () => {
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="w-7 h-7 font-bold cursor-pointer hover:opacity-60"
+                        className="w-7 h-7 text-gray-500 font-bold cursor-pointer hover:text-gray-100"
                         onClick={previousSlide}
+                        data-aos-delay={4000}
                       >
                         <path
                           strokeLinecap="round"
@@ -51,8 +76,6 @@ const Brands = () => {
                     )
                   : false
               }
-              data-aos="fade-left"
-              data-aos-delay="100"
               renderCenterRightControls={
                 brandImages.length > 6
                   ? ({ nextSlide }) => (
@@ -62,8 +85,9 @@ const Brands = () => {
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="w-7 h-7 font-bold cursor-pointer hover:opacity-60"
+                        className="w-7 h-7 text-gray-500 font-bold cursor-pointer hover:text-gray-100"
                         onClick={nextSlide}
+                        data-aos-delay={4000}
                       >
                         <path
                           strokeLinecap="round"
