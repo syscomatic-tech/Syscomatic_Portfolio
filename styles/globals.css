@@ -38,7 +38,7 @@ a {
 
 /* scrollbar styles*/
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 10px;
 }
 
@@ -53,15 +53,15 @@ a {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(139, 139, 139);
-}
+} */
 
 /* Buttons styles */
 .button {
   --color: #311589;
   padding: 12px 24px;
   gap: 10px;
-  width: 201px;
-  height: 54px;
+  width: 180px;
+  height: 48px;
   background: #ffffff;
   border: none;
   border-radius: 34px;
@@ -70,9 +70,9 @@ a {
   font-size: 20px;
   cursor: pointer;
   color: #311589;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  /* transition-property: all; */
+  /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  /* transition-duration: 150ms; */
 
   position: relative;
   overflow: hidden;
@@ -81,7 +81,7 @@ a {
   z-index: 1;
 }
 
-.button::before,
+/* .button::before,
 .button::after {
   content: "";
   display: block;
@@ -111,12 +111,15 @@ a {
   width: 410px;
 }
 
-.button:hover {
-  color: rgb(255, 255, 255);
-}
-
 .button:active {
   filter: brightness(0.9);
+} */
+.button:hover {
+  color: rgb(255, 255, 255);
+  background-color: #311589;
+  transition-duration: 300ms;
+  filter: brightness(0.9);
+  filter: drop-shadow(0 1px 4px #0C0033);
 }
 .ReactCollapse--collapse {
   transition: height 500ms;

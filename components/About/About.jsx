@@ -28,7 +28,7 @@ const About = () => {
         />
         <div className="flex items-center justify-between my-6 flex-col lg:flex-row">
           <div
-            className="bg-[#0C0033] lg:w-96 w-full h-56 flex items-center justify-center flex-col my-2 lg:my-0 "
+            className="bg-[#0C0033] lg:w-80 xl:w-96 w-full h-56 flex items-center justify-center flex-col my-2 lg:my-0 "
             data-aos="fade-right"
             data-aos-delay="200"
           >
@@ -39,7 +39,7 @@ const About = () => {
             <span className="!text-3xl !font-bold mt-5">Discover</span>
           </div>
           <div
-            className="bg-[#0C0033] lg:w-96 w-full h-56 flex items-center justify-center flex-col my-2 lg:my-0 "
+            className="bg-[#0C0033] lg:w-80 xl:w-96 w-full h-56 flex items-center justify-center flex-col my-2 lg:my-0 "
             data-aos="fade-up"
             data-aos-delay="400"
           >
@@ -50,7 +50,7 @@ const About = () => {
             <span className="!text-3xl !font-bold mt-5">Innovation</span>
           </div>
           <div
-            className="bg-[#0C0033] lg:w-96 w-full h-56 flex items-center justify-center flex-col my-2 lg:my-0 "
+            className="bg-[#0C0033] lg:w-80 xl:w-96 w-full h-56 flex items-center justify-center flex-col my-2 lg:my-0 "
             data-aos="fade-left"
             data-aos-delay="600"
           >

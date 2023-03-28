@@ -1,8 +1,8 @@
 .container {
   /* width: 1240px; */
   margin: 0 auto;
-  padding: 100px;
-  display: flex;
+  padding: 80px;
+  /* display: flex; */
   /* left: 0px;
   top: 0px; */
   background: linear-gradient(180deg, rgba(7, 0, 29, 0) 0%, #07001d 100%),
@@ -15,7 +15,7 @@
 .container h1 {
   font-style: normal;
   font-weight: 700;
-  font-size: 100px;
+  font-size: 60px;
   /* line-height: 161px; */
   /* identical to box height, or 161px */
 
@@ -31,8 +31,9 @@
 .container p {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 50px;
+  line-height: 22px;
 }
 .storyHead {
   margin: 22px auto;
@@ -70,8 +71,8 @@
     font-size: 35px;
   }
   .story p {
-    font-size: 19px;
-    line-height: 40px;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -92,7 +93,8 @@
     margin: 80px 0;
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 22px;
   }
   .storyHead {
     flex-direction: column;
@@ -109,6 +111,7 @@
   }
   .story p {
     margin: 9px 0;
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 22px;
   }
 }

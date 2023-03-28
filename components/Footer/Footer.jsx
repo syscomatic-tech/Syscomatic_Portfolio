@@ -32,8 +32,8 @@ const Footer = () => {
         data-aos="fade-in-up"
         data-aos-delay="200"
       >
-        <div>
-          <h1>Let’s start a project!</h1>
+        <div className="flex flex-col gap-4 sm:flex-row">
+          <h1 className="!text-2xl">Let’s start a project!</h1>
           <label htmlFor="my-modal-4" className={`btn normal-case button`}>
             Get a Quote
           </label>
@@ -52,21 +52,21 @@ const Footer = () => {
                 <img
                   src="Images/Contact/linkedin.png"
                   alt=""
-                  className="hover:rotate-6 transition-all"
+                  className="hover:rotate-6 w-8 transition-all"
                 />
               </Link>
               <Link href="#">
                 <img
                   src="Images/Contact/facebook.png"
                   alt=""
-                  className="hover:rotate-6 transition-all"
+                  className="hover:rotate-6 w-8 transition-all"
                 />
               </Link>
               <Link href="#">
                 <img
                   src="Images/Contact/cb.png"
                   alt=""
-                  className="hover:rotate-6 transition-all"
+                  className="hover:rotate-6 w-8 transition-all"
                 />
               </Link>
             </div>

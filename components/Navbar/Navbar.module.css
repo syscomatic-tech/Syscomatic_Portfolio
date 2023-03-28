@@ -4,7 +4,7 @@
   /* width: 1440px; */
   width: 100vw;
   margin: 0 auto;
-  height: 80px;
+  height: 70px;
   left: 0px;
   top: 0px;
 
@@ -16,26 +16,30 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .container {
   position: relative;
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   padding: 0px 38px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   /* gap: 170px; */
 }
+
 .logo {
   width: 180px;
   height: 30.79px;
 }
+
 .logo a {
   display: block;
 }
+
 .content ul {
   display: flex;
   flex-direction: row;
@@ -47,14 +51,16 @@
   width: 560px;
   height: 31px;
 }
+
 .content ul li {
   list-style-type: none;
   /* font-family: "Poppins"; */
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 26px;
 }
+
 .quote {
   /* display: flex;
   flex-direction: row;
@@ -70,35 +76,43 @@
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  /* line-height: 27px; */
+  /* line-height: 22px; */
   color: #311589;
 }
+
 .hamburger {
   display: none;
 }
+
 .hideMobileNavigation {
   display: none;
 }
+
 @media only screen and (max-width: 600px) {
   .logo {
     width: 50%;
     height: auto;
   }
+
   .logo img {
     width: 100%;
   }
+
   .content,
   .quote {
     display: none;
   }
+
   .hamburger {
     display: block;
   }
+
   .hamburger svg {
     margin: 0 20px;
     width: 30px;
     height: 30px;
   }
+
   .MobileNavigation {
     display: flex;
     position: fixed;
@@ -112,6 +126,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .MobileNavigation button {
     background-color: transparent;
     border: 0;
@@ -123,6 +138,7 @@
     cursor: pointer;
     transition: 0.5s;
   }
+
   .MobileNavigation button:hover {
     opacity: 0.9s;
   }
@@ -136,10 +152,12 @@
     text-transform: uppercase;
     background: #00000014;
   }
+
   .MobileNavigation ul li {
     list-style: none;
     padding: 10px;
   }
+
   .MobileNavigation ul li a:hover {
     opacity: 0.7;
   }
@@ -163,13 +181,14 @@
   border: 1px solid #551fff;
   border-radius: 12px;
 }
+
 .contact label {
   height: 20px;
 
   /* font-family: 'Poppins'; */
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 25px;
   /* identical to box height */
 
@@ -177,6 +196,7 @@
 
   color: #9c99a5;
 }
+
 .contact input {
   /* input[type=text] { */
   background: transparent;
@@ -184,11 +204,13 @@
   border-bottom: 1px solid #9c99a5;
   /* } */
 }
+
 .contact input:focus {
   outline: none;
   border-bottom: 1px solid #fff;
   padding-bottom: 10px;
 }
+
 .contact .createBtn {
   padding: 12px 24px;
   gap: 10px;
@@ -216,11 +238,13 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
 .contact .createBtn:hover {
   background: #311589;
   color: white;
   border: white;
 }
+
 .inputContainer {
   position: relative;
 }
@@ -230,16 +254,18 @@
   transition: all 0.3s ease;
 }
 
-.inputContainer input:focus ~ label,
-.inputContainer input:valid ~ label {
+.inputContainer input:focus~label,
+.inputContainer input:valid~label {
   @apply text-[15px];
   transform: translateY(-30px);
   left: 0;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .contact {
     padding: 30px;
   }
+
   .createBtn {
     padding: 12px 16px;
 
@@ -251,6 +277,7 @@
     color: #311589;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .contact {
     width: 100%;

@@ -7,7 +7,7 @@
   margin: 12px 0;
   text-align: center;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 76px;
 }
 .heading p {
@@ -17,8 +17,8 @@
   /* font-family: 'Poppins'; */
   font-style: normal;
   font-weight: 400;
-  font-size: 23px;
-  line-height: 34px;
+  font-size: 16px;
+  line-height: 22px;
   text-align: center;
 }
 .container ul {
@@ -44,8 +44,8 @@
   /* width: 307.27px; */
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 22px;
   color: #9c99a5;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {
@@ -56,7 +56,7 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .container ul li p {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 22px;
   }
 }
@@ -72,8 +72,8 @@
   .heading p {
     width: auto;
    
-    font-size: 17px;
-    line-height: 34px;
+    font-size: 16px;
+    line-height: 22px;
     text-align: center;
   }
   .container ul {

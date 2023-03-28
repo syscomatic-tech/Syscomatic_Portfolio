@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
     <div>
       <Navbar></Navbar>
       <div className="max-w-[1440px] mx-auto">
-        <div className="mt-[80px]">
+        <div className="mt-[70px]">
           <QueryClientProvider client={queryClient}>
             <Component {...pageProps} />
           </QueryClientProvider>

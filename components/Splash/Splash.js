@@ -109,12 +109,12 @@ overflow-x:hidden;
   @keyframes ringStroke42 {
     from,
       to {
-      stroke-dashoffset: 452;
+      strokeDashoffset: 452;
       transform: rotate(-45deg);
     }
   
     50% {
-      stroke-dashoffset: 169.5;
+      strokeDashoffset: 169.5;
       transform: rotate(-180deg);
     }
   }
@@ -124,12 +124,12 @@ overflow-x:hidden;
       3%,
       47%,
       to {
-      stroke-dashoffset: -12;
+      strokeDashoffset: -12;
     }
   
     14%,
       36% {
-      stroke-dashoffset: 0;
+      strokeDashoffset: 0;
     }
   }
 `;

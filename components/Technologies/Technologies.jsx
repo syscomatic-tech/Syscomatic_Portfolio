@@ -29,7 +29,7 @@ const Technologies = () => {
       </div>
       <ul>
         {techs.map((item, index) => (
-          <li key={index} data-aos="fade-up" data-aos-delay={100 + index * 100}>
+          <li key={index} data-aos="fade-up" data-aos-delay={50 + index * 100}>
             <img src={item} width="195" height="195" alt="" />
           </li>
         ))}

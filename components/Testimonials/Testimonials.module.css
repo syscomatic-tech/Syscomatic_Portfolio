@@ -6,7 +6,7 @@
   margin: 12px 0;
   text-align: center;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 76px;
 }
 .heading p {
@@ -16,8 +16,8 @@
   /* font-family: 'Poppins'; */
   font-style: normal;
   font-weight: 400;
-  font-size: 23px;
-  line-height: 34px;
+  font-size: 16px;
+  line-height: 22px;
   text-align: center;
 }
 .main {
@@ -47,8 +47,8 @@
 .testimonial p {
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 16px;
+  line-height: 22px;
   /* or 33px */
 }
 .testimonial h4 {
@@ -82,8 +82,8 @@
     height: auto;
     margin: 20px;
 
-    font-size: 19px;
-    line-height: 34px;
+    font-size: 16px;
+    line-height: 22px;
   }
   .main {
     width: 100%;
@@ -109,8 +109,8 @@
   .testimonial p {
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 22px;
     /* or 33px */
   }
   .testimonial h4 {

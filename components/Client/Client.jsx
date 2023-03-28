@@ -3,9 +3,9 @@ import style from "./Client.module.css";
 const Client = () => {
   return (
     <div className={style.container}>
-      <div className={style.heading} data-aos="fade-left" data-aos-delay="100">
-        <h3>Who we serve?</h3>
-        <p>
+      <div className={style.heading}>
+        <h3  data-aos="fade-right" data-aos-delay="100">Who we serve?</h3>
+        <p  data-aos="fade-left" data-aos-delay="100">
           Syscomatic is software development as a service (SDass) Platform with
           a business
         </p>
@@ -34,7 +34,7 @@ const Client = () => {
             help of technology .
           </p>
         </li>
-        <li data-aos="fade-right" data-aos-delay="500">
+        <li data-aos="fade-right" data-aos-delay="450">
           <img src="Images/Client/education.png" alt="" />
           <h4>Education</h4>
           <p>
@@ -42,14 +42,14 @@ const Client = () => {
             century.
           </p>
         </li>
-        <li data-aos="fade-up" data-aos-delay="600">
+        <li data-aos="fade-up" data-aos-delay="500">
           <img src="Images/Client/healthcare.png" alt="" />
           <h4>Healthcare</h4>
           <p>
             Keeping a healthy lifestyle is made easier by tech-enabled products.
           </p>
         </li>
-        <li data-aos="fade-left" data-aos-delay="700">
+        <li data-aos="fade-left" data-aos-delay="550">
           <img src="Images/Client/automotive.png" alt="" />
           <h4>Automotive</h4>
           <p>
@@ -57,7 +57,7 @@ const Client = () => {
             a complete new experience by leveraging technology
           </p>
         </li>
-        <li data-aos="fade-right" data-aos-delay="800">
+        <li data-aos="fade-right" data-aos-delay="590">
           <img src="Images/Client/agriculture.png" alt="" />
           <h4>Agriculture</h4>
           <p>
@@ -65,7 +65,7 @@ const Client = () => {
             monolithic farming.
           </p>
         </li>
-        <li data-aos="fade-up" data-aos-delay="900">
+        <li data-aos="fade-up" data-aos-delay="610">
           <img src="Images/Client/energy.png" alt="" />
           <h4>Energy</h4>
           <p>
@@ -73,7 +73,7 @@ const Client = () => {
             improve their lives.
           </p>
         </li>
-        <li data-aos="fade-left" data-aos-delay="1000">
+        <li data-aos="fade-left" data-aos-delay="620">
           <img src="Images/Client/logistics.png" alt="" />
           <h4>Logistics</h4>
           <p>
@@ -81,7 +81,7 @@ const Client = () => {
             user&#39;s information.
           </p>
         </li>
-        <li data-aos="fade-right" data-aos-delay="1100">
+        <li data-aos="fade-right" data-aos-delay="630">
           <img src="Images/Client/media.png" alt="" />
           <h4>Media and Entertainment</h4>
           <p>

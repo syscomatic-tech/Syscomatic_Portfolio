@@ -14,22 +14,22 @@
   align-items: flex-start;
 }
 .static img {
-  width: 80%;
+  width: 65%;
   margin-bottom: 10px;
 }
 .static p {
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 22px;
   margin-bottom: 20px;
 }
 .info {
   padding: 17px 44px;
   gap: 10px;
 
-  width: 199px;
-  height: 70px;
+  width: 180px;
+  height: 55px;
 
   /* #FFFFFF */
 
@@ -38,7 +38,7 @@
   border-radius: 36px;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 21px;
   /* line-height: 36px; */
   color: #311589;
 }
@@ -90,14 +90,14 @@
 }
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {
   .static p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .static p {
-    font-size: 19px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 22px;
   }
   .dropDown ul li h3 {
     font-size: 19px;
@@ -105,7 +105,7 @@
     /* line-height: ; */
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 991px) {
   .container {
     padding: 50px 30px;
     display: flex;
@@ -118,11 +118,11 @@
     width: 100%;
   }
   .static img {
-    width: 80%;
+    width: 300px;
   }
   .static p {
-    font-size: 17px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 22px;
   }
   .info {
     padding: 17px 34px;

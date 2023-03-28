@@ -9,7 +9,7 @@ const Projects = () => {
         <p>Take a look at some of our successful projects</p>
       </div>
       <ul>
-        <li data-aos="fade-right" data-aos-delay="200">
+        <li data-aos="fade-right" data-aos-delay="100">
           <div>
             <img src="Images/Projects/onnow.png" alt="" />
           </div>
@@ -27,7 +27,7 @@ const Projects = () => {
             management systems, and digital payment integration.
           </p>
 
-          <Link href="#">
+          <Link target={'_blank'} href="https://app.onnow.io/login/">
             <button className={style.viewWork}>
               <span className={style.circle} aria-hidden="true">
                 <span className={style.icon} />
@@ -36,7 +36,7 @@ const Projects = () => {
             </button>
           </Link>
         </li>
-        <li data-aos="fade-up" data-aos-delay="300">
+        <li data-aos="fade-up" data-aos-delay="150">
           <div>
             <img src="Images/Projects/urgentfuel.png" alt="" />
           </div>
@@ -52,7 +52,7 @@ const Projects = () => {
             This web app is used for D2C food ordering systems, kitchen
             management systems, and digital payment integration.
           </p>
-          <Link href="#">
+          <Link target={'_blank'} href="https://uftl.syscomatic.com/">
             <button className={style.viewWork}>
               <span className={style.circle} aria-hidden="true">
                 <span className={style.icon} />
@@ -61,7 +61,7 @@ const Projects = () => {
             </button>
           </Link>
         </li>
-        <li data-aos="fade-left" data-aos-delay="400">
+        {/* <li data-aos="fade-left" data-aos-delay="400">
           <div>
             <img src="Images/Projects/pocacademy.png" alt="" />
           </div>
@@ -77,7 +77,7 @@ const Projects = () => {
             This web app is used for D2C food ordering systems, kitchen
             management systems, and digital payment integration.
           </p>
-          <Link href="#">
+          <Link target={'_blank'} href="#">
             <button className={style.viewWork}>
               <span className={style.circle} aria-hidden="true">
                 <span className={style.icon} />
@@ -85,8 +85,8 @@ const Projects = () => {
               <span className={style.buttonText}>View Work</span>
             </button>
           </Link>
-        </li>
-        <li data-aos="fade-right" data-aos-delay="500">
+        </li> */}
+        <li data-aos="fade-right" data-aos-delay="200">
           <div>
             <img src="Images/Projects/tunibibi.png" alt="" />
           </div>
@@ -102,7 +102,7 @@ const Projects = () => {
             This web app is used for D2C food ordering systems, kitchen
             management systems, and digital payment integration.
           </p>
-          <Link href="#">
+          <Link target={'_blank'} href="https://tunibibi.com/">
             <button className={style.viewWork}>
               <span className={style.circle} aria-hidden="true">
                 <span className={style.icon} />
@@ -111,7 +111,7 @@ const Projects = () => {
             </button>
           </Link>
         </li>
-        <li data-aos="fade-up" data-aos-delay="600">
+        <li data-aos="fade-up" data-aos-delay="250">
           <div>
             <img src="Images/Projects/buet.png" alt="" />
           </div>
@@ -127,7 +127,7 @@ const Projects = () => {
             This web app is used for D2C food ordering systems, kitchen
             management systems, and digital payment integration.
           </p>
-          <Link href="#">
+          <Link target={'_blank'} href="https://hum.buet.ac.bd/">
             <button className={style.viewWork}>
               <span className={style.circle} aria-hidden="true">
                 <span className={style.icon} />
@@ -136,7 +136,7 @@ const Projects = () => {
             </button>
           </Link>
         </li>
-        <li data-aos="fade-left" data-aos-delay="700">
+        <li data-aos="fade-left" data-aos-delay="300">
           <div>
             <img src="Images/Projects/du.png" alt="" />
           </div>
@@ -152,7 +152,7 @@ const Projects = () => {
             This web app is used for D2C food ordering systems, kitchen
             management systems, and digital payment integration.
           </p>
-          <Link href="#">
+          <Link target={'_blank'} href="https://criminology.du.ac.bd/">
             <button className={style.viewWork}>
               <span className={style.circle} aria-hidden="true">
                 <span className={style.icon} />

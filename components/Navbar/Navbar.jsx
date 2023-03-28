@@ -200,7 +200,7 @@ const Navbar = () => {
           {" "}
           <label
             htmlFor="my-modal-4"
-            className="btn btn-sm btn-outline btn-circle absolute right-8 top-8"
+            className="btn btn-sm btn-outline btn-circle absolute right-9 top-9"
           >
             ✕
           </label>
@@ -244,8 +244,8 @@ const Navbar = () => {
 
             <button
               className={`btn normal-case button`}
-              data-aos="fade-up"
-              data-aos-delay="100"
+              // data-aos="fade-up"
+              // data-aos-delay="100"
               type="submit"
             >
               Get a Quote

@@ -27,14 +27,14 @@ const Banner = () => {
   };
   return (
     <div className={style.container}>
-      <div className={style.main}>
+      <div className={`${style.main}`}>
         <div className={style.slogan}>
           <h1 data-aos="fade-right" data-aos-delay="100">
             Build Your <br /> Digital Existence
           </h1>
           <p
             data-aos="fade-up"
-            data-aos-delay="1200"
+            data-aos-delay="900"
             className="text-gray-200 mt-4"
           >
             We are your technology partner for innovative and impactful digital
@@ -86,8 +86,8 @@ const Banner = () => {
 
           <button
             className={`btn normal-case button`}
-            data-aos="fade-up"
-            data-aos-delay="1400"
+            // data-aos="fade-up"
+            // data-aos-delay="1400"
             type="submit"
           >
             Get a Quote

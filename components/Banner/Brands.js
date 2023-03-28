@@ -8,12 +8,12 @@ const Brands = () => {
     "Images/Brands/tunibibi.png",
     "Images/Brands/poc.png",
     "Images/Brands/fuel.png",
-    "Images/Brands/fuel.png",
-    "Images/Brands/poc.png",
-    "Images/Brands/tunibibi.png",
-    "Images/Brands/du.png",
-    "Images/Brands/buet.png",
     "Images/Brands/onnow.png",
+    "Images/Brands/buet.png",
+    "Images/Brands/du.png",
+    "Images/Brands/tunibibi.png",
+    "Images/Brands/poc.png",
+    "Images/Brands/fuel.png",
   ];
 
   const [screenWidth, setScreenWidth] = useState(null);
@@ -40,8 +40,8 @@ const Brands = () => {
     };
   }, [screenWidth, counter]);
   return (
-    <section class="mb-48" id="services">
-      <div class="container mx-auto">
+    <section class="mb-12 md:mb-24 xl:mb-36" id="services">
+      <div class="container mx-auto ">
         <div class="-mx-4 flex flex-wrap">
           <div class="w-full px-4">
             {/* <div class="flex flex-wrap items-center justify-between"> */}
@@ -51,7 +51,7 @@ const Brands = () => {
               pauseOnHover
               autoplayInterval={3000}
               speed={500}
-              slidesToShow={screenWidth > 768 ? 6 : screenWidth > 500 ? 3 : 2}
+              slidesToShow={screenWidth > 1024 ? 6 : screenWidth > 720 ? 4 : 2}
               wrapAround={true}
               renderBottomCenterControls={false}
               renderCenterLeftControls={
@@ -103,11 +103,11 @@ const Brands = () => {
                 <a
                   key={index}
                   href="#"
-                  class="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
-                  data-aos-delay={200 + index * 100}
+                  class="mx-4 flex w-[150px] items-center mx-auto h-full justify-center py-5 2xl:w-[180px]"
+                  data-aos-delay={50 + index * 100}
                   data-aos="fade-up"
                 >
-                  <img src={item} alt="image" class="" />
+                  <img src={item} alt="image" className="" />
                 </a>
               ))}
             </Carousel>

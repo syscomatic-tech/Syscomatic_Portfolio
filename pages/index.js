@@ -66,7 +66,7 @@ export default function Home() {
       <Technologies></Technologies>
       <Operate />
       <Projects></Projects>
-      <Testimonials></Testimonials>
+      {/* <Testimonials></Testimonials> */}
     </div>
   );
 }

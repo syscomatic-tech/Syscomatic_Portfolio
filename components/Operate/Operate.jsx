@@ -50,9 +50,9 @@ const Operate = () => {
   const [hoverd, setHoverd] = useState(null);
   return (
     <div className={style.container}>
-      <div className={style.heading} data-aos="fade-left" data-aos-delay="200">
-        <h3>Our Approach</h3>
-        <p>
+      <div className={style.heading}>
+        <h3 data-aos="fade-right" data-aos-delay="200">Our Approach</h3>
+        <p data-aos="fade-left" data-aos-delay="200">
           We abide by a unique way of approach to minimize the timeframe & to
           maximize productivity, and efficiency.
         </p>
@@ -76,7 +76,7 @@ const Operate = () => {
                 }`,
               }}
               data-aos="fade-up"
-              data-aos-delay={100 + item.id * 200}
+              data-aos-delay={50 + item.id * 50}
               key={item.id}
             >
               <div className="  absolute bottom-0 left-0 px-4 pb-4">
