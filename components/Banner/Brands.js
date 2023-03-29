@@ -10,6 +10,14 @@ const Brands = () => {
     ["Images/Brands/fuel.png", 'https://uftl.syscomatic.com/'],
     ["Images/Brands/tradematrix.jpg", 'https://www.tradematrixsoftware.com'],
     
+    ["Images/Brands/onnow.png", 'https://app.onnow.io/login/'],
+    ["Images/Brands/buet.png", 'https://hum.buet.ac.bd/'],
+    ["Images/Brands/du.png", 'https://criminology.du.ac.bd/'],
+    ["Images/Brands/tunibibi.png", 'https://tunibibi.com/'],
+    ["Images/Brands/poc.png", '/poc'],
+    ["Images/Brands/fuel.png", 'https://uftl.syscomatic.com/'],
+    ["Images/Brands/tradematrix.jpg", 'https://www.tradematrixsoftware.com'],
+    
   ];
 
   const [screenWidth, setScreenWidth] = useState(null);
