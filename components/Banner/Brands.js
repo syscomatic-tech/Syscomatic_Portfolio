@@ -2,18 +2,14 @@ import Carousel from "nuka-carousel/lib/carousel";
 import React, { useEffect, useRef, useState } from "react";
 const Brands = () => {
   const brandImages = [
-    "Images/Brands/onnow.png",
-    "Images/Brands/buet.png",
-    "Images/Brands/du.png",
-    "Images/Brands/tunibibi.png",
-    "Images/Brands/poc.png",
-    "Images/Brands/fuel.png",
-    "Images/Brands/onnow.png",
-    "Images/Brands/buet.png",
-    "Images/Brands/du.png",
-    "Images/Brands/tunibibi.png",
-    "Images/Brands/poc.png",
-    "Images/Brands/fuel.png",
+    ["Images/Brands/onnow.png", 'https://app.onnow.io/login/'],
+    ["Images/Brands/buet.png", 'https://hum.buet.ac.bd/'],
+    ["Images/Brands/du.png", 'https://criminology.du.ac.bd/'],
+    ["Images/Brands/tunibibi.png", 'https://tunibibi.com/'],
+    ["Images/Brands/poc.png", '/poc'],
+    ["Images/Brands/fuel.png", 'https://uftl.syscomatic.com/'],
+    ["Images/Brands/tradematrix.jpg", 'https://www.tradematrixsoftware.com'],
+    
   ];
 
   const [screenWidth, setScreenWidth] = useState(null);
@@ -102,12 +98,13 @@ const Brands = () => {
               {brandImages.map((item, index) => (
                 <a
                   key={index}
-                  href="#"
-                  class="mx-4 flex w-[150px] items-center mx-auto h-full justify-center py-5 2xl:w-[180px]"
+                  href={item[1]}
+                  class="flex w-[150px] items-center mx-auto h-full justify-center py-5 2xl:w-[180px]"
                   data-aos-delay={50 + index * 100}
                   data-aos="fade-up"
+                  target='blank'
                 >
-                  <img src={item} alt="image" className="" />
+                  <img src={item[0]} alt="image" className="" />
                 </a>
               ))}
             </Carousel>

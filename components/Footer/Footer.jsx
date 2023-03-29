@@ -80,13 +80,16 @@ const Footer = () => {
                 <Link href="/about">About Us</Link>
               </li>
               <li>
-                <Link href="/mission">Mission</Link>
+                <Link href="/#services">Services</Link>
               </li>
               <li>
-                <Link href="/vision">Vision</Link>
+                <Link href="/#portfolio">Portfolio</Link>
               </li>
               <li>
-                <Link href="#contact">Contact Us</Link>
+                <Link href="/blogs">Blogs</Link>
+              </li>
+              <li>
+                <Link href="/#contact">Contact Us</Link>
               </li>
             </ul>
           </div>
