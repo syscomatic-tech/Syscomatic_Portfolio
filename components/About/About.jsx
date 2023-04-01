@@ -16,7 +16,7 @@ const About = () => {
           data-aos="fade-right"
           data-aos-delay="600"
         >
-          Syscomatic is software development as a service (SDass) Platform with
+          Syscomatic is a software development as a service (SDass) Platform with
           a business-first approach. We offer a variety of value-adding
           solutions and best-of-breed services to internet companies worldwide.
         </p>
