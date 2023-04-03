@@ -51,7 +51,7 @@ const Operate = () => {
   return (
     <div className={style.container}>
       <div className={style.heading}>
-        <h3 data-aos="fade-right" data-aos-delay="200">Our Approach</h3>
+        <h3 data-aos="fade-right" data-aos-delay="200">Our approach</h3>
         <p data-aos="fade-left" data-aos-delay="200">
           We abide by a unique way of approach to minimize the timeframe & to
           maximize productivity, and efficiency.

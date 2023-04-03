@@ -6,17 +6,19 @@ const Brands = () => {
     ["Images/Brands/buet.png", 'https://hum.buet.ac.bd/'],
     ["Images/Brands/du.png", 'https://criminology.du.ac.bd/'],
     ["Images/Brands/tunibibi.png", 'https://tunibibi.com/'],
-    ["Images/Brands/poc.png", '/poc'],
+    ["Images/Brands/seaqua.png", 'https://seaqua.io'],
     ["Images/Brands/fuel.png", 'https://uftl.syscomatic.com/'],
-    ["Images/Brands/tradematrix.jpg", 'https://www.tradematrixsoftware.com'],
+    ["Images/Brands/tradematrix.png", 'https://www.tradematrixsoftware.com'],
+    ["Images/Brands/poc.png", '/poc'],
     
     ["Images/Brands/onnow.png", 'https://app.onnow.io/login/'],
     ["Images/Brands/buet.png", 'https://hum.buet.ac.bd/'],
     ["Images/Brands/du.png", 'https://criminology.du.ac.bd/'],
     ["Images/Brands/tunibibi.png", 'https://tunibibi.com/'],
-    ["Images/Brands/poc.png", '/poc'],
+    ["Images/Brands/seaqua.png", 'https://seaqua.io'],
     ["Images/Brands/fuel.png", 'https://uftl.syscomatic.com/'],
-    ["Images/Brands/tradematrix.jpg", 'https://www.tradematrixsoftware.com'],
+    ["Images/Brands/tradematrix.png", 'https://www.tradematrixsoftware.com'],
+    ["Images/Brands/poc.png", '/poc'],
     
   ];
 

@@ -107,7 +107,7 @@ const Navbar = () => {
           className={`btn button normal-case hidden lg:flex items-center justify-center ${style.quote}`}
           htmlFor="my-modal-4"
         >
-          Get a Quote
+          Get a quote
         </label>
         <div
           className={
@@ -164,7 +164,7 @@ const Navbar = () => {
               className="btn bg-white rounded-full p-4 text-black"
               htmlFor="my-modal-4"
             >
-              Get a Quote
+              Get a quote
             </label>
           </ul>
         </div>
@@ -248,7 +248,7 @@ const Navbar = () => {
               // data-aos-delay="100"
               type="submit"
             >
-              Get a Quote
+              Get a quote
             </button>
           </form>
         </label>

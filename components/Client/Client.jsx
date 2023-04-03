@@ -6,14 +6,14 @@ const Client = () => {
       <div className={style.heading}>
         <h3  data-aos="fade-right" data-aos-delay="100">Who we serve?</h3>
         <p  data-aos="fade-left" data-aos-delay="100">
-          Syscomatic is software development as a service (SDass) Platform with
+          Syscomatic is a software development as a service (SDass) Platform with
           a business
         </p>
       </div>
       <ul>
         <li data-aos="fade-right" data-aos-delay="200">
           <img src="Images/Client/e-commerce.png" alt="" />
-          <h4>E-Commerce</h4>
+          <h4>E-commerce </h4>
           <p>
             Digitalize your offline business for better services and to scale.
           </p>
@@ -83,7 +83,7 @@ const Client = () => {
         </li>
         <li data-aos="fade-right" data-aos-delay="630">
           <img src="Images/Client/media.png" alt="" />
-          <h4>Media and Entertainment</h4>
+          <h4>Media and entertainment</h4>
           <p>
             keeping your users up to date with the latest trends and interests.
           </p>

@@ -63,7 +63,7 @@ const ContactModal = () => {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              Get a Quote
+              Get a quote
             </button>
           </div>
         </label>

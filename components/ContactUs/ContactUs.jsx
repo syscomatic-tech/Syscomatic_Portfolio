@@ -7,7 +7,7 @@ const ContactUs = () => {
       <div className={style.heading} data-aos="fade-left" data-aos-delay="200">
         <h1>Contact us</h1>
         <p>
-          Syscomatic is software development as a service <br /> (SDass)
+          Syscomatic is a software development as a service <br /> (SDass)
           Platform with a business
         </p>
       </div>
@@ -81,7 +81,7 @@ const ContactUs = () => {
           <input type="email" name="email" id="" />
           <label htmlFor="">Your Message</label>
           <input type="text" name="message" id="" />
-          <button className={`btn normal-case button`}>Get a Quote</button>
+          <button className={`btn normal-case button`}>Get a quote</button>
         </div>
       </div>
     </div>

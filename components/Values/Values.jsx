@@ -6,7 +6,7 @@ const Values = () => {
       <div className={style.heading} data-aos="fade-down" data-aos-delay="200">
         <h3>Our Core Values</h3>
         <p>
-          Syscomatic is software development as a service (SDass) Platform with
+          Syscomatic is a software development as a service (SDass) Platform with
           a business
         </p>
       </div>

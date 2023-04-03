@@ -90,7 +90,7 @@ const Banner = () => {
             // data-aos-delay="1400"
             type="submit"
           >
-            Get a Quote
+            Get a quote
           </button>
         </form>
       </div>

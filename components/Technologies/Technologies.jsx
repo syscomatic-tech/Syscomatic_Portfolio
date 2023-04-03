@@ -18,13 +18,13 @@ const Technologies = () => {
     "Images/Technologies/firebase.png",
     "Images/Technologies/postgresql.png",
     "Images/Technologies/react.png",
-    "Images/Technologies/vuejs.png",
+    "Images/Technologies/nextjs.png",
     "Images/Technologies/tailwindcss.png",
   ];
   return (
     <div className={style.container}>
       <div className={style.heading} data-aos="fade-down" data-aos-delay="200">
-        <h4>Our Preferred</h4>
+        <h4>Our preferred</h4>
         <h3>Technologies</h3>
       </div>
       <ul>

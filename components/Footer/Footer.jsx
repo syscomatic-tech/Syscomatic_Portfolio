@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="flex flex-col gap-4 sm:flex-row">
           <h1 className="!text-2xl">Let’s start a project!</h1>
           <label htmlFor="my-modal-4" className={`btn normal-case button`}>
-            Get a Quote
+            Get a quote
           </label>
         </div>
       </div>
@@ -196,7 +196,7 @@ const Footer = () => {
               data-aos-delay="100"
               type="submit"
             >
-              Get a Quote
+              Get a quote
             </button>
           </form>
         </label>
