@@ -161,6 +161,31 @@ const Projects = () => {
             </button>
           </Link>
         </li>
+        <li data-aos="fade-left" data-aos-delay="300">
+          <div>
+            <img className="h-24" src="Images/Projects/readvive.png" alt="" />
+          </div>
+          <h4>
+            Academic Web Application <br /> for Dhaka University{" "}
+          </h4>
+          <img
+            className={style.laptop}
+            src="Images/Projects/laptop.png"
+            alt=""
+          />
+          <p>
+            This web app is used for D2C food ordering systems, kitchen
+            management systems, and digital payment integration.
+          </p>
+          <Link target={'_blank'} href="https://readvive-web-three.vercel.app/">
+            <button className={style.viewWork}>
+              <span className={style.circle} aria-hidden="true">
+                <span className={style.icon} />
+              </span>
+              <span className={style.buttonText}>View Work</span>
+            </button>
+          </Link>
+        </li>
       </ul>
     </div>
   );

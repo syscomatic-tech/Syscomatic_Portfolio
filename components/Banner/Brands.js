@@ -9,7 +9,8 @@ const Brands = () => {
     ["Images/Brands/seaqua.png", 'https://seaqua.io'],
     ["Images/Brands/fuel.png", 'https://uftl.syscomatic.com/'],
     ["Images/Brands/tradematrix.png", 'https://www.tradematrixsoftware.com'],
-    ["Images/Brands/poc.png", '/poc'],
+    ["Images/Brands/readvive.png", 'https://readvive-web-three.vercel.app'],
+    ["Images/Brands/poc.png"],
     
     ["Images/Brands/onnow.png", 'https://app.onnow.io/login/'],
     ["Images/Brands/buet.png", 'https://hum.buet.ac.bd/'],
@@ -18,7 +19,8 @@ const Brands = () => {
     ["Images/Brands/seaqua.png", 'https://seaqua.io'],
     ["Images/Brands/fuel.png", 'https://uftl.syscomatic.com/'],
     ["Images/Brands/tradematrix.png", 'https://www.tradematrixsoftware.com'],
-    ["Images/Brands/poc.png", '/poc'],
+    ["Images/Brands/readvive.png", 'https://readvive-web-three.vercel.app'],
+    ["Images/Brands/poc.png"],
     
   ];
 
