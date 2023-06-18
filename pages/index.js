@@ -31,15 +31,15 @@ export default function Home() {
         <meta property="og:url" content="https://www.syscomatic.com/" />
         <meta
           property="og:title"
-          content="Syscomatic - Build Your Digital Existence "
+          content="Syscomatic - Reimagining the Digital Frontier"
         />
         <meta
           property="og:description"
-          content=" Build Your Digital Existence"
+          content="Syscomatic is a software development as a service (SDass) Platform with a business-first approach"
         />
         <meta
           property="og:image"
-          content="https://i.ibb.co/QXFY69C/banner-Facebook.jpg"
+          content="https://i.ibb.co/T2tNL5x/sysco-og-img.png"
         />
 
         {/* <!-- Twitter --> */}
