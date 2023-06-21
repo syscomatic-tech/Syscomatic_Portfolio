@@ -18,11 +18,11 @@ export default function Home() {
         <title>Syscomatic - Reimagining the Digital Frontier</title>
         <meta
           name="title"
-          content="Syscomatic - Build Your Digital Existence"
+          content="Syscomatic - Reimagining the Digital Frontier"
         />
         <meta
           name="description"
-          content="Build Your Digital Existence"
+          content="Syscomatic is a software development as a service (SDass) Platform with a business-first approach"
         />
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
@@ -45,15 +45,15 @@ export default function Home() {
         <meta property="twitter:url" content="https://www.syscomatic.com/" />
         <meta
           property="twitter:title"
-          content="Syscomatic - Build Your Digital Existence"
+          content="Syscomatic - Reimagining the Digital Frontier"
         />
         <meta
           property="twitter:description"
-          content=" Build Your Digital Existence"
+          content=" Syscomatic is a software development as a service (SDass) Platform with a business-first approach"
         />
         <meta
           property="twitter:image"
-          content="https://i.ibb.co/QXFY69C/banner-Facebook.jpg"
+          content="https://i.ibb.co/T2tNL5x/sysco-og-img.png"
         />
       </Head>
       <Banner></Banner>
