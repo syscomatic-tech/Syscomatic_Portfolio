@@ -15,17 +15,15 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         {/* <!-- Primary Meta Tags --> */}
-        <title>Syscomatic - Build Your Digital Existence</title>
+        <title>Syscomatic - Reimagining the Digital Frontier</title>
         <meta
           name="title"
           content="Syscomatic - Build Your Digital Existence"
         />
         <meta
           name="description"
-          content="Build Your Digital Existence
-"
+          content="Build Your Digital Existence"
         />
-
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.syscomatic.com/" />
