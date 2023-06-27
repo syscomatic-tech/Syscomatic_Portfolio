@@ -48,6 +48,24 @@ const Team = () => {
             className="my-3"
           />
         </li>
+        <li data-aos="fade-up" data-aos-delay="600">
+          <div>
+            <img src="Images/Team/zahed.png" alt="" className="my-3" />
+            <h4>Zahed Hasan</h4>
+            <h5>Chief Technology Officer</h5>
+            <p>
+              Zahed is currently leading software technology systems. He is a
+              great problem solver and highly dedicated to fast learning.
+            </p>
+          </div>
+          <img
+            src="Images/Team/linkedin.png"
+            width="30"
+            height="30"
+            alt=""
+            className="my-3"
+          />
+        </li>
         <li data-aos="fade-left" data-aos-delay="400">
           <div>
             <img src="Images/Team/asifur.png" alt="" className="my-3" />
@@ -84,50 +102,14 @@ const Team = () => {
             className="my-3"
           />
         </li>
-        <li data-aos="fade-up" data-aos-delay="600">
-          <div>
-            <img src="Images/Team/zahed.png" alt="" className="my-3" />
-            <h4>Zahed Hasan</h4>
-            <h5>Chief Technology Officer</h5>
-            <p>
-              Zahed is currently leading software technology systems. He is a
-              great problem solver and highly dedicated to fast learning.
-            </p>
-          </div>
-          <img
-            src="Images/Team/linkedin.png"
-            width="30"
-            height="30"
-            alt=""
-            className="my-3"
-          />
-        </li>
         <li data-aos="fade-left" data-aos-delay="700">
           <div>
-            <img src="Images/Team/shuvro.png" alt="" className="my-3" />
-            <h4>Shuvro Baset</h4>
+            <img src="Images/Team/tousif.jpeg" alt="" className="my-3 w-[150px] rounded-full h-[150px] object-cover border-[3px] border-[#9f81ff]" />
+            <h4>Tousif Ahmed</h4>
             <h5>Full Stack Engineer</h5>
             <p>
-              Shuvro Baset is an experienced full-stack engineer. He is well
+              Tousif is an experienced full-stack engineer. He is well
               known for problem solving & logical decisions.
-            </p>
-          </div>
-          <img
-            src="Images/Team/linkedin.png"
-            width="30"
-            height="30"
-            alt=""
-            className="my-3"
-          />
-        </li>
-        <li data-aos="fade-right" data-aos-delay="800">
-          <div>
-            <img src="Images/Team/jisan.png" alt="" className="my-3" />
-            <h4>Jisan Mia</h4>
-            <h5>Frontend Engineer</h5>
-            <p>
-              Jisan is a effective frontend engineer. He creates visually
-              appealing and highly functional frontend.
             </p>
           </div>
           <img
