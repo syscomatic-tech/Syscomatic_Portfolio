@@ -61,15 +61,27 @@ const Blogs = ({ data }) => {
     </div>
   );
 };
-export async function getServerSideProps({ query }) {
+export async function getStaticProps(context) {
   // const router = useRouter();
   // Fetch data from external API
-
-  const { data } = await axios.get(
-    `https://api.server.syscomatic.com/api/v1/AllBlogList?category=${query.category}`
-  );
+  const query = context.params;
+  console.log(query)
+  // const { data } = await axios.get(
+  //   `https://api.server.syscomatic.com/api/v1/AllBlogList?category=${query.category}`
+  // );
+  const data = {
+    data: [
+      {
+        _id: 'graesgerg',
+        category: 'Graesgerg',
+        title: 'Graesgerg',
+        image: 'https://syscomatic.com/wp-content/uploads/2021/03/Graesgerg-1.jpg',
+        date: '2021-03-20',
+        description: 'Graesgerg',
+      }
+    ]
+  }
   // Pass data to the page via props
-
   return { props: data };
 }
 export default Blogs;
