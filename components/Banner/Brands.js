@@ -47,6 +47,7 @@ const Brands = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, [screenWidth, counter]);
+  console.log(brandImages)
   return (
     <section class="mb-12 md:mb-24 xl:mb-36" id="services">
       <div class="container mx-auto ">
