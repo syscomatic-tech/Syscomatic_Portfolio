@@ -1,14 +1,23 @@
-# Install dependencies only when needed
-FROM node:alpine
+# Use the official Node.js image as the base image
+FROM node:14
 
-RUN mkdir -p /usr/app/
-WORKDIR /usr/app
+# Set the working directory in the container
+WORKDIR /app
 
-COPY ./ ./
+# Copy package.json and package-lock.json to the container's working directory
+COPY package*.json ./
 
-RUN npm install --legacy-peer-deps
+# Install the application's dependencies
+RUN npm install
+
+# Copy the Next.js application code to the container's working directory
+COPY . .
+
+# Build the Next.js application
 RUN npm run build
 
+# Expose the port on which the Next.js application is listening
 EXPOSE 3001
 
+# Command to run your Next.js application in production mode
 CMD ["npm", "start"]
