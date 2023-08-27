@@ -2,7 +2,7 @@
 // import Head from "next/head";
 // import Image from "next/image";
 // import { useRouter } from "next/router.js";
-// import React from "react";
+import React from "react";
 // import BlogCards from "../components/Blogs/BlogCards.js";
 // import BlogsHeader from "../components/Blogs/BlogsHeader.js";
 // import BlogsBanner from "./../public/Images/Blogs/blogs_banner.png";
