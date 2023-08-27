@@ -110,7 +110,7 @@ const Footer = () => {
                 height="41"
                 alt=""
               />
-              <p>syscomatic@gmail.com</p>
+              <p>rakib@gmail.com</p>
             </div>
             <div>
               <img
@@ -120,7 +120,7 @@ const Footer = () => {
                 alt=""
               />
               <p>
-                Ventura Iconia, Level 3, House 37, Road 111, Block H, Banani,
+                Ventura Iconia, Level 3, House 37, Road 11, Block H, Banani,
                 Dhaka-1213
               </p>
             </div>

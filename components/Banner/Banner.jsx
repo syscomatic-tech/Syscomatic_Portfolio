@@ -7,7 +7,7 @@ const Banner = () => {
   const sendMessage = (e) => {
     e.preventDefault();
     const { name, email, text } = e.target;
-
+console.log(name.value, email.value, text.value)
     axios
       .post("https://api.server.syscomatic.com/api/v1/sendMail", {
         subject: name.value,
