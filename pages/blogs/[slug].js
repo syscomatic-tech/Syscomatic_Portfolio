@@ -3,9 +3,9 @@
 // import Head from "next/head";
 // import Image from "next/image";
 // import { useRouter } from "next/router";
-// import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
-// const blogdetails = ({ data: blogs }) => {
+const blogdetails = ({ data: blogs }) => {
 //   const router = useRouter();
 //   const blog = blogs[0];
 //   const [moreBlogs, setMoreBlogs] = useState([]);
@@ -116,7 +116,7 @@
 //       <div></div>
 //     </div>
 //   );
-// };
+};
 // export async function getServerSideProps({ params }) {
 //   // Fetch data from external API
 //   const { data } = await axios.get(
@@ -125,4 +125,4 @@
 //   // Pass data to the page via props
 //   return { props: data };
 // }
-// export default blogdetails;
+export default blogdetails;

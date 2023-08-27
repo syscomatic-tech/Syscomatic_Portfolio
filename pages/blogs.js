@@ -7,7 +7,7 @@
 // import BlogsHeader from "../components/Blogs/BlogsHeader.js";
 // import BlogsBanner from "./../public/Images/Blogs/blogs_banner.png";
 // import { useQuery } from "react-query";
-// const Blogs = ({ data }) => {
+const Blogs = ({ data }) => {
 //   const router = useRouter();
 //   console.log(router.query.category);
 //   return (
@@ -60,7 +60,7 @@
 //       <BlogCards blogs={data}></BlogCards>
 //     </div>
 //   );
-// };
+};
 // export async function getStaticProps(context) {
 //   // const router = useRouter();
 //   // Fetch data from external API
@@ -84,4 +84,4 @@
 //   // Pass data to the page via props
 //   return { props: data };
 // }
-// export default Blogs;
+export default Blogs;
