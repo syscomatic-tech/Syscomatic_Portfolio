@@ -110,7 +110,7 @@ const Footer = () => {
                 height="41"
                 alt=""
               />
-              <p>rakib@gmail.com</p>
+              <p>rakib@syscomatic.com</p>
             </div>
             <div>
               <img
