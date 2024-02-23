@@ -11,7 +11,7 @@ const Team = () => {
         </p>
       </div>
       <ul>
-        <li data-aos="fade-right" data-aos-delay="200">
+        {/* <li data-aos="fade-right" data-aos-delay="200">
           <div>
             <img src="Images/Team/rakib.png" alt="" className="my-3" />
             <h4>Rakib Ullah</h4>
@@ -29,7 +29,7 @@ const Team = () => {
             alt=""
             className="my-3"
           />
-        </li>
+        </li> */}
         <li data-aos="fade-up" data-aos-delay="300">
           <div>
             <img src="Images/Team/shahed.png" alt="" className="my-3" />

@@ -110,7 +110,8 @@ const Footer = () => {
                 height="41"
                 alt=""
               />
-              <p>rakib@syscomatic.com</p>
+              <p>syscomatic@gmail.com</p>
+              {/* <p>rakib@syscomatic.com</p> */}
             </div>
             <div>
               <img
