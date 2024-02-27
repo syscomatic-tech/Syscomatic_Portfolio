@@ -104,12 +104,16 @@ const Team = () => {
         </li>
         <li data-aos="fade-left" data-aos-delay="700">
           <div>
-            <img src="Images/Team/tousif.jpeg" alt="" className="my-3 w-[150px] rounded-full h-[150px] object-cover border-[3px] border-[#9f81ff]" />
+            <img
+              src="Images/Team/tousif.jpeg"
+              alt=""
+              className="my-3 w-[150px] rounded-full h-[150px] object-cover border-[3px] border-[#9f81ff]"
+            />
             <h4>Tousif Ahmed</h4>
             <h5>Full Stack Engineer</h5>
             <p>
-              Tousif is an experienced full-stack engineer. He is well
-              known for problem solving & logical decisions.
+              Tousif is an experienced full-stack engineer. He is well known for
+              problem solving & logical decisions.
             </p>
           </div>
           <img
@@ -128,6 +132,162 @@ const Team = () => {
             <p>
               Syscomatic™ is having Sabbir on board to look after the back-end
               part. He is well known for his logical problem solving experience.
+            </p>
+          </div>
+          <img
+            src="Images/Team/linkedin.png"
+            width="30"
+            height="30"
+            alt=""
+            className="my-3"
+          />
+        </li>
+        <li data-aos="fade-up" data-aos-delay="900">
+          <div>
+            <img src="Images/Team/sabbir.png" alt="" className="my-3" />
+            <h4>Md. Sabbir Hossain</h4>
+            <h5>Backend Engineer</h5>
+            <p>
+              Syscomatic™ is having Sabbir on board to look after the back-end
+              part. He is well known for his logical problem solving experience.
+            </p>
+          </div>
+          <img
+            src="Images/Team/linkedin.png"
+            width="30"
+            height="30"
+            alt=""
+            className="my-3"
+          />
+        </li>
+        <li data-aos="fade-up" data-aos-delay="900">
+          <div>
+            <img
+              src="Images/Team/shaiadul.jpg"
+              alt=""
+              className="my-3 rounded-full w-36 border-[3px] border-[#977af4] "
+            />
+            <h4>Md. Shaiadul Basar</h4>
+            <h5>Full Stack Developer</h5>
+            <p>
+              Syscomatic™ is having shaiadul on board to look after the
+              full-stack part. He is well known for his logical problem solving
+              experience.
+            </p>
+          </div>
+          <img
+            src="Images/Team/linkedin.png"
+            width="30"
+            height="30"
+            alt=""
+            className="my-3"
+          />
+        </li>
+        <li data-aos="fade-up" data-aos-delay="900">
+          <div>
+            <img
+              src="Images/Team/safayet.jpg"
+              alt=""
+              className="my-3 rounded-full w-36 border-[3px] border-[#977af4] "
+            />
+            <h4>Safayet</h4>
+            <h5>Front End Developer</h5>
+            <p>
+              Syscomatic™ is having Safayet on board to look after the Frontend
+              part. He is well known for his Frontend problem solving
+              experience.
+            </p>
+          </div>
+          <img
+            src="Images/Team/linkedin.png"
+            width="30"
+            height="30"
+            alt=""
+            className="my-3"
+          />
+        </li>
+        <li data-aos="fade-up" data-aos-delay="900">
+          <div>
+            <img
+              src="Images/Team/mahir.jpg"
+              alt=""
+              className="my-3 rounded-full w-36 border-[3px] border-[#977af4] "
+            />
+            <h4>Mahir Faisal</h4>
+            <h5>Mobile App Developer</h5>
+            <p>
+              Syscomatic™ is having Mahir Faisal on board to look after the Mobile App Development
+              part. He is well known for his Application problem solving
+              experience.
+            </p>
+          </div>
+          <img
+            src="Images/Team/linkedin.png"
+            width="30"
+            height="30"
+            alt=""
+            className="my-3"
+          />
+        </li>
+        <li data-aos="fade-up" data-aos-delay="900">
+          <div>
+            <img
+              src="Images/Team/sadik.jpg"
+              alt=""
+              className="my-3 rounded-full w-36 h-36 border-[3px] border-[#977af4] object-cover"
+            />
+            <h4>Sadik Abdullah</h4>
+            <h5>Mobile App Developer</h5>
+            <p>
+              Syscomatic™ is having Sadik on board to look after the AI & ML Development
+              part. He is well known for his Machine problem solving
+              experience.
+            </p>
+          </div>
+          <img
+            src="Images/Team/linkedin.png"
+            width="30"
+            height="30"
+            alt=""
+            className="my-3"
+          />
+        </li>
+        <li data-aos="fade-up" data-aos-delay="900">
+          <div>
+            <img
+              src="Images/Team/rafat.jpg"
+              alt=""
+              className="my-3 rounded-full w-36 h-36 border-[3px] border-[#977af4] object-cover"
+            />
+            <h4>Rafat Hossain</h4>
+            <h5> DevOps / Infrostructure</h5>
+            <p>
+              Syscomatic™ is having Rafat Hossain on board to look after the DevOps / Infrostructure advisor ( Amar Pay)
+              part. He is well known for his DevOps problem solving
+              experience.
+            </p>
+          </div>
+          <img
+            src="Images/Team/linkedin.png"
+            width="30"
+            height="30"
+            alt=""
+            className="my-3"
+          />
+        </li>
+        <li data-aos="fade-up" data-aos-delay="900">
+          <div>
+            <img
+              src="Images/Team/foyzul.jpg"
+              alt=""
+              className="my-3 rounded-full w-36 h-36 border-[3px] border-[#977af4] object-cover"
+            />
+            <h4>Fayzul Karim</h4>
+            <h5> Solution Architect</h5>
+            <p>
+              Syscomatic™ is having Rafat Hossain on board to look after the advisor ( Mentor Loop)
+              part. He is well known for his problem solving
+              experience.
             </p>
           </div>
           <img
