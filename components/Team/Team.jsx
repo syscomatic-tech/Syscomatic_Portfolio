@@ -237,7 +237,7 @@ const Team = () => {
               className="my-3 rounded-full w-36 h-36 border-[3px] border-[#977af4] object-cover"
             />
             <h4>Sadik Abdullah</h4>
-            <h5>Mobile App Developer</h5>
+            <h5>AI && ML Engineer</h5>
             <p>
               Syscomatic™ is having Sadik on board to look after the AI & ML Development
               part. He is well known for his Machine problem solving
