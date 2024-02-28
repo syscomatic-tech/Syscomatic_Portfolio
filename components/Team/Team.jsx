@@ -149,7 +149,7 @@ const Team = () => {
               alt=""
               className="my-3 rounded-full w-36 border-[3px] border-[#977af4] "
             />
-            <h4>Md. Shaiadul Basar</h4>
+            <h4>Md. Shaiadul</h4>
             <h5>Full Stack Developer</h5>
             <p>
               Syscomatic™ is having shaiadul on board to look after the
