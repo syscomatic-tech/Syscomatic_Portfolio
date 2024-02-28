@@ -144,24 +144,6 @@ const Team = () => {
         </li>
         <li data-aos="fade-up" data-aos-delay="900">
           <div>
-            <img src="Images/Team/sabbir.png" alt="" className="my-3" />
-            <h4>Md. Sabbir Hossain</h4>
-            <h5>Backend Engineer</h5>
-            <p>
-              Syscomatic™ is having Sabbir on board to look after the back-end
-              part. He is well known for his logical problem solving experience.
-            </p>
-          </div>
-          <img
-            src="Images/Team/linkedin.png"
-            width="30"
-            height="30"
-            alt=""
-            className="my-3"
-          />
-        </li>
-        <li data-aos="fade-up" data-aos-delay="900">
-          <div>
             <img
               src="Images/Team/shaiadul.jpg"
               alt=""
