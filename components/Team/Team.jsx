@@ -242,9 +242,9 @@ const Team = () => {
               className="my-3 rounded-full w-36 h-36 border-[3px] border-[#977af4] object-cover"
             />
             <h4>Rafat Hossain</h4>
-            <h5> DevOps / Infrostructure</h5>
+            <h5> DevOps / Infrastructure </h5>
             <p>
-              Syscomatic™ is having Rafat Hossain on board to look after the DevOps / Infrostructure advisor ( Amar Pay)
+              Syscomatic™ is having Rafat Hossain on board to look after the DevOps / Infrastructure  advisor ( Amar Pay)
               part. He is well known for his DevOps problem solving
               experience.
             </p>
