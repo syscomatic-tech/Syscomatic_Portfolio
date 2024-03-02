@@ -121,7 +121,7 @@ const Team = () => {
             src="Images/Team/linkedin.png"
             width="30"
             height="30"
-            alt=""
+            alt="tasin sir"
             className="my-3"
           />
         </li>
