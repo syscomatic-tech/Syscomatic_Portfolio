@@ -105,9 +105,9 @@ const Team = () => {
         <li data-aos="fade-right" data-aos-delay="900">
           <div>
             <img
-              src="Images/Team/tasin.png"
+              src="Images/Team/sir.jpg"
               alt=""
-              className="my-3 rounded-full w-36 h-36 border-[3px] border-[#977af4] object-contain"
+              className="my-3 rounded-full w-36 h-36 border-[3px] border-[#977af4] object-cover"
             />
             <h4>Md Shahrier Tasin</h4>
             <h5>Associate Software Lead</h5>
