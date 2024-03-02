@@ -102,6 +102,29 @@ const Team = () => {
             className="my-3"
           />
         </li>
+        <li data-aos="fade-right" data-aos-delay="900">
+          <div>
+            <img
+              src="Images/Team/tasin.jpg"
+              alt=""
+              className="my-3 rounded-full w-36 h-36 border-[3px] border-[#977af4] object-cover"
+            />
+            <h4>Md Shahrier Tasin</h4>
+            <h5>Associate Software Lead</h5>
+            <p>
+              Crafted with a fervor for problem-solving and armed with a CS
+              degree, Tasin thrives in dynamic environments where innovation
+              reigns supreme.
+            </p>
+          </div>
+          <img
+            src="Images/Team/linkedin.png"
+            width="30"
+            height="30"
+            alt=""
+            className="my-3"
+          />
+        </li>
         <li data-aos="fade-left" data-aos-delay="700">
           <div>
             <img
@@ -124,6 +147,7 @@ const Team = () => {
             className="my-3"
           />
         </li>
+
         <li data-aos="fade-up" data-aos-delay="900">
           <div>
             <img src="Images/Team/sabbir.png" alt="" className="my-3" />
@@ -142,7 +166,7 @@ const Team = () => {
             className="my-3"
           />
         </li>
-        <li data-aos="fade-up" data-aos-delay="900">
+        <li data-aos="fade-right" data-aos-delay="900">
           <div>
             <img
               src="Images/Team/shaiadul.jpg"
@@ -165,7 +189,7 @@ const Team = () => {
             className="my-3"
           />
         </li>
-        <li data-aos="fade-up" data-aos-delay="900">
+        <li data-aos="fade-left" data-aos-delay="900">
           <div>
             <img
               src="Images/Team/safayet.jpg"
@@ -188,7 +212,7 @@ const Team = () => {
             className="my-3"
           />
         </li>
-        <li data-aos="fade-up" data-aos-delay="900">
+        <li data-aos="fade-right" data-aos-delay="900">
           <div>
             <img
               src="Images/Team/mahir.jpg"
@@ -198,9 +222,9 @@ const Team = () => {
             <h4>Mahir Faisal</h4>
             <h5>Mobile App Developer</h5>
             <p>
-              Syscomatic™ is having Mahir Faisal on board to look after the Mobile App Development
-              part. He is well known for his Application problem solving
-              experience.
+              Syscomatic™ is having Mahir Faisal on board to look after the
+              Mobile App Development part. He is well known for his Application
+              problem solving experience.
             </p>
           </div>
           <img
@@ -211,7 +235,7 @@ const Team = () => {
             className="my-3"
           />
         </li>
-        <li data-aos="fade-up" data-aos-delay="900">
+        <li data-aos="fade-left" data-aos-delay="900">
           <div>
             <img
               src="Images/Team/sadik.jpg"
@@ -221,8 +245,8 @@ const Team = () => {
             <h4>Sadik Abdullah</h4>
             <h5>AI & ML Engineer</h5>
             <p>
-              Syscomatic™ is having Sadik on board to look after the AI & ML Development
-              part. He is well known for his Machine problem solving
+              Syscomatic™ is having Sadik on board to look after the AI & ML
+              Development part. He is well known for his Machine problem solving
               experience.
             </p>
           </div>
@@ -244,9 +268,9 @@ const Team = () => {
             <h4>Rafat Hossain</h4>
             <h5> DevOps / Infrastructure </h5>
             <p>
-              Syscomatic™ is having Rafat Hossain on board to look after the DevOps / Infrastructure  advisor ( Amar Pay)
-              part. He is well known for his DevOps problem solving
-              experience.
+              Syscomatic™ is having Rafat Hossain on board to look after the
+              DevOps / Infrastructure advisor ( Amar Pay) part. He is well known
+              for his DevOps problem solving experience.
             </p>
           </div>
           <img
@@ -267,9 +291,9 @@ const Team = () => {
             <h4>Fayzul Karim</h4>
             <h5> Solution Architect</h5>
             <p>
-              Syscomatic™ is having Rafat Hossain on board to look after the advisor ( Mentor Loop)
-              part. He is well known for his problem solving
-              experience.
+              Syscomatic™ is having Rafat Hossain on board to look after the
+              advisor ( Mentor Loop) part. He is well known for his problem
+              solving experience.
             </p>
           </div>
           <img
